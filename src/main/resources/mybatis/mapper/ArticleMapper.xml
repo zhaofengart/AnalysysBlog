@@ -361,4 +361,12 @@
 
   </select>
 
+
+  <!-- 增加文章浏览量 -->
+  <update id="addOneToScanNumByArticleId">
+    update article
+    set scan_num = scan_num + 1
+    where articleId = articleId;
+  </update>
+
 </mapper>

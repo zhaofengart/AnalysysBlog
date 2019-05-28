@@ -5,6 +5,7 @@ import com.analysys.blog.entity.Article;
 import com.analysys.blog.pojo.ArticleParam;
 import com.analysys.blog.pojo.WangEditor;
 import com.analysys.blog.service.ArticleService;
+import com.analysys.blog.util.FileHandleUtil;
 import com.analysys.blog.util.FileUtil;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -53,23 +55,14 @@ public class ArticleController extends BaseController {
 
     // 富文本上传
     @RequestMapping("/uploadMutilPartFile")
-    public ReturnData uploadMutilPartFile(@RequestParam("myFile") MultipartFile multipartFile,
-                                          HttpServletRequest request) {
+    public WangEditor uploadMutilPartFile(@RequestParam("myFile") MultipartFile multipartFile,
+                                          HttpServletRequest request) throws IOException {
+        FileHandleUtil.upload(multipartFile.getInputStream(), multipartFile.getOriginalFilename());
 
-        // 获取项目路径
-        String realPath = request.getSession().getServletContext().getRealPath("");
-        String tempUrl = request.getScheme() + "://" + request.getServerName()
-                + ":" + request.getServerPort() + "/upload/";
-        return FileUtil.upload(multipartFile, realPath, tempUrl);
+        return FileUtil.upload(multipartFile, request);
     }
 
 
-//    @RequestMapping("/publishArticle")
-//    public ReturnData publishArticle(@RequestParam("article") Article article, @RequestParam("tagList") List<Integer> tagList) {
-//        System.out.println(tagList);
-//        // 前端自行填写img_path
-//        return articleService.insert(article, tagList);
-//    }
 
     @PostMapping("/publishArticle")
     public ReturnData publishArticle(@RequestBody ArticleParam articleParam){
@@ -78,7 +71,7 @@ public class ArticleController extends BaseController {
 
     // 测试文章内容
     @RequestMapping("/publishArticleContent")
-    public ReturnData publishArticleContent(@RequestBody String content){
+    public ReturnData publishArticleContent(String content){
         System.out.println(content);
         return null;
     }

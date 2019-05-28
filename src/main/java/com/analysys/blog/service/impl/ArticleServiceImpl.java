@@ -8,14 +8,12 @@ import com.analysys.blog.pojo.ArticlePojo;
 import com.analysys.blog.pojo.SimpleArticlePojo;
 import com.analysys.blog.repository.ArticleMapper;
 import com.analysys.blog.repository.ArticleTagMapper;
+import com.analysys.blog.repository.TagMapper;
 import com.analysys.blog.service.ArticleService;
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author zhaofeng
@@ -35,6 +33,9 @@ public class ArticleServiceImpl implements ArticleService {
     @Resource
     private ArticleTagMapper articleTagMapper;
 
+    @Resource
+    private TagMapper tagMapper;
+
     @Override
     public ReturnData publishArticle(ArticleParam articleParam) {
         Article article = new Article();
@@ -46,17 +47,24 @@ public class ArticleServiceImpl implements ArticleService {
 
         // 获取第一张图片url
         String content = articleParam.getContent();
+        System.out.println(content);
         String imgTagHeader = "<img src=";
         int indexOfFirstImgTag = content.indexOf(imgTagHeader);
-        // 第一张图片url第一个双引号
-        int startIndex = indexOfFirstImgTag + imgTagHeader.length();
-        int endIndex = startIndex + 1;
-        while (content.charAt(endIndex) != '\"'){
-            endIndex++;
+
+        if (indexOfFirstImgTag != -1) {
+            // 第一张图片url第一个双引号
+            int startIndex = indexOfFirstImgTag + imgTagHeader.length();
+            int endIndex = startIndex + 1;
+            while (content.charAt(endIndex) != '\"'){
+                endIndex++;
+            }
+
+            String imgPath = content.substring(startIndex, endIndex + 1);
+            article.setImgPath(imgPath);
         }
 
-        String imgPath = content.substring(startIndex, endIndex + 1);
-        article.setImgPath(imgPath);
+
+
         articleMapper.insert(article);
         // 获取自增主键
         Integer articleId = article.getArticleId();
@@ -70,7 +78,7 @@ public class ArticleServiceImpl implements ArticleService {
             articleTagMapper.insert(articleTagKey);
         }
 
-        return ReturnData.buildSuccessResult("");
+        return ReturnData.buildSuccessResult(ArticleResult.PUBLISH_SUCCESS.toString());
     }
 
 
@@ -84,6 +92,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public ReturnData getNewestArticle() {
         List<ArticlePojo> articlePojoList = articleMapper.selectNewestArticleWithLimitNum(DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
+
         return ReturnData.buildSuccessResult(articlePojoList);
     }
 
@@ -92,8 +101,8 @@ public class ArticleServiceImpl implements ArticleService {
     public ReturnData getNewestArticleByTagIdAndPageNo(Integer tagId, Integer pageNo) {
         List<ArticlePojo> articlePojoList = articleMapper.selectArtilceByTagIdWithStartIndexAndLimitNum(
                 tagId, (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE );
-        if (articlePojoList == null) {
-            return ReturnData.buildFailResult("");
+        if (articlePojoList.isEmpty()) {
+            return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         return ReturnData.buildSuccessResult(articlePojoList);
@@ -103,8 +112,8 @@ public class ArticleServiceImpl implements ArticleService {
     public ReturnData getNewestArticleByPageNo(Integer pageNo) {
         List<ArticlePojo> articlePojoList =  articleMapper.selectArtilceWithStartIndexAndLimitNum(
                 (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
-        if (articlePojoList.size() == 0) {
-            return ReturnData.buildFailResult("");
+        if (articlePojoList.isEmpty()) {
+            return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         return ReturnData.buildSuccessResult(articlePojoList);
@@ -120,23 +129,20 @@ public class ArticleServiceImpl implements ArticleService {
             ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
-        Map<String, Object> map = new HashMap<>();
-        map.put("article", articlePojo);
 
-        return ReturnData.buildSuccessResult(map);
+
+        return ReturnData.buildSuccessResult(articlePojo);
     }
 
 
     @Override
     public ReturnData getPopularArticle() {
         List<SimpleArticlePojo> articlePojoList = articleMapper.selectPopularArticleWithLimitNum(DEFAULT_FETCH_NUM_OF_POPULAR_ARTICLE);
-        if (articlePojoList == null) {
+        if (articlePojoList.isEmpty()) {
             ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
-        Map<String, Object> map = new HashMap<>();
-        map.put("articleList", articlePojoList);
 
-        return ReturnData.buildSuccessResult(map);
+        return ReturnData.buildSuccessResult(articlePojoList);
     }
 
 
@@ -149,8 +155,8 @@ public class ArticleServiceImpl implements ArticleService {
         List<ArticlePojo> articlePojoList =
                 articleMapper.selectArtilceByCategoryIdWithStartIndexAndLimitNum(categoryId,
                 (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
-        if (articlePojoList.size() == 0) {
-            return ReturnData.buildFailResult("");
+        if (articlePojoList.isEmpty()) {
+            return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         return ReturnData.buildSuccessResult(articlePojoList);
@@ -160,9 +166,11 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public ReturnData getNewestArticleByTagId(Integer tagId) {
         List<ArticlePojo> articlePojoList = articleMapper.selectArtilceByTagIdWithStartIndexAndLimitNum(tagId, 0, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
-        if (articlePojoList == null) {
-            return ReturnData.buildFailResult("");
+        if (articlePojoList.isEmpty()) {
+            return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
+
+        tagMapper.addOneToCallNumByTagId(tagId);
 
         return ReturnData.buildSuccessResult(articlePojoList);
     }
@@ -183,11 +191,8 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public ReturnData getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId) {
         Integer totalNumOfArticle = articleMapper.selectTotalNumOfArticleByCategoryIdOrTagId(categoryId, tagId);
-        Map<String, Object> map = new HashMap<>();
-        ((HashMap) map).put("totalNumOfArticle", totalNumOfArticle);
-        return ReturnData.buildSuccessResult(map);
+        return ReturnData.buildSuccessResult(totalNumOfArticle);
     }
-
 
 
 

@@ -120,8 +120,6 @@ public interface ArticleService {
      */
     ReturnData getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId);
     
-    
-    
-    
+
 
 }

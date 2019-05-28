@@ -64,4 +64,13 @@ public interface TagMapper {
 
 
     List<Tag> selectPopularTagWithLimitNum(Integer defaultFetchNumOfPopularTag);
+    
+    
+    /**
+     * 增加标签点击数
+     *
+     * @param
+     * @return 
+     */
+    int addOneToCallNumByTagId(Integer tagId);
 }

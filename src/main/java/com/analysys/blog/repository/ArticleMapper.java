@@ -147,4 +147,13 @@ public interface ArticleMapper {
      * @return 
      */
     Integer selectTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId);
+    
+    
+    /**
+     * 增加文章浏览量
+     *
+     * @param
+     * @return 
+     */
+    Integer addOneToScanNumByArticleId(Integer articleId);
 }

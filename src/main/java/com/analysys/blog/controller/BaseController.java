@@ -16,6 +16,7 @@ public abstract class BaseController {
 
     @ExceptionHandler(value = Exception.class)
     public ReturnData handle(Exception e){
+        System.out.println(e.getMessage());
         return ReturnData.buildFailResult(e.getMessage());
     }
 

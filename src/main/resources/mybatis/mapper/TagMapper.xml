@@ -129,4 +129,11 @@
     order by call_num desc
     limit #{limitNum}
   </select>
+
+
+  <update id="addOneToCallNumByTagId">
+    update tag
+    set call_num = call_num + 1
+    where tag_id = #{tagId}
+  </update>
 </mapper>

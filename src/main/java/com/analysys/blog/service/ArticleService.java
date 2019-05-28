@@ -2,6 +2,9 @@ package com.analysys.blog.service;
 
 import com.analysys.blog.common.ReturnData;
 import com.analysys.blog.entity.Article;
+import com.analysys.blog.pojo.ArticleParam;
+
+import java.util.List;
 
 /**
  * @author zhaofeng
@@ -13,11 +16,10 @@ public interface ArticleService {
     /**
      * 发布文章
      *
-     * @param article 要发布的文章
+     * @param
      * @return
      */
-    ReturnData insert(Article article);
-
+    ReturnData publishArticle(ArticleParam articleParam);
     /**
      * 修改文章
      *
@@ -110,5 +112,14 @@ public interface ArticleService {
     ReturnData getNextArticle(Integer tagId, Integer categoryId, Integer articleId);
 
 
+    /**
+     * 根据文章类别id和标签id获取文章总数
+     *
+     * @param
+     * @return 
+     */
     ReturnData getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId);
+    
+
+
 }

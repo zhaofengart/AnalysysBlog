@@ -2,6 +2,7 @@ package com.analysys.blog.controller;
 
 import com.analysys.blog.common.ReturnData;
 import com.analysys.blog.entity.Article;
+import com.analysys.blog.pojo.ArticleParam;
 import com.analysys.blog.pojo.WangEditor;
 import com.analysys.blog.service.ArticleService;
 import com.analysys.blog.util.FileUtil;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author zhaofeng
@@ -52,6 +55,7 @@ public class ArticleController extends BaseController {
     @RequestMapping("/uploadMutilPartFile")
     public ReturnData uploadMutilPartFile(@RequestParam("myFile") MultipartFile multipartFile,
                                           HttpServletRequest request) {
+
         // 获取项目路径
         String realPath = request.getSession().getServletContext().getRealPath("");
         String tempUrl = request.getScheme() + "://" + request.getServerName()
@@ -60,15 +64,21 @@ public class ArticleController extends BaseController {
     }
 
 
+//    @RequestMapping("/publishArticle")
+//    public ReturnData publishArticle(@RequestParam("article") Article article, @RequestParam("tagList") List<Integer> tagList) {
+//        System.out.println(tagList);
+//        // 前端自行填写img_path
+//        return articleService.insert(article, tagList);
+//    }
+
     @PostMapping("/publishArticle")
-    public ReturnData publishArticle(Article article) {
-        // 前端自行填写img_path
-        return articleService.insert(article);
+    public ReturnData publishArticle(@RequestBody ArticleParam articleParam){
+        return articleService.publishArticle(articleParam);
     }
 
     // 测试文章内容
-    @PostMapping("/publishArticleContent")
-    public ReturnData publishArticleContent(@RequestParam("content") String content){
+    @RequestMapping("/publishArticleContent")
+    public ReturnData publishArticleContent(@RequestBody String content){
         System.out.println(content);
         return null;
     }

@@ -2,6 +2,7 @@ package com.analysys.blog.pojo;
 
 import com.analysys.blog.entity.Tag;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -75,8 +76,9 @@ public class ArticlePojo {
         this.username = username;
     }
 
-    public Date getIssueTime() {
-        return issueTime;
+    public String getIssueTime() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        return simpleDateFormat.format(issueTime);
     }
 
     public void setIssueTime(Date issueTime) {

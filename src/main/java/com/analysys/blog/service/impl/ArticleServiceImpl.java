@@ -2,9 +2,12 @@ package com.analysys.blog.service.impl;
 
 import com.analysys.blog.common.ReturnData;
 import com.analysys.blog.entity.Article;
+import com.analysys.blog.entity.ArticleTagKey;
+import com.analysys.blog.pojo.ArticleParam;
 import com.analysys.blog.pojo.ArticlePojo;
 import com.analysys.blog.pojo.SimpleArticlePojo;
 import com.analysys.blog.repository.ArticleMapper;
+import com.analysys.blog.repository.ArticleTagMapper;
 import com.analysys.blog.service.ArticleService;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Service;
@@ -29,15 +32,45 @@ public class ArticleServiceImpl implements ArticleService {
     @Resource
     private ArticleMapper articleMapper;
 
+    @Resource
+    private ArticleTagMapper articleTagMapper;
 
     @Override
-    public ReturnData insert(Article article) {
-        int result = articleMapper.insert(article);
-        if (result != 1) {
-            return ReturnData.buildFailResult(ArticleResult.PUBLISH_FAILURE.toString());
+    public ReturnData publishArticle(ArticleParam articleParam) {
+        Article article = new Article();
+        article.setCategoryId(articleParam.getCategoryId());
+        article.setTitle(articleParam.getTitle());
+        article.setContent(articleParam.getContent());
+        article.setUserId(articleParam.getUserId());
+        article.setSummary(articleParam.getSummary());
+
+        // 获取第一张图片url
+        String content = articleParam.getContent();
+        String imgTagHeader = "<img src=";
+        int indexOfFirstImgTag = content.indexOf(imgTagHeader);
+        // 第一张图片url第一个双引号
+        int startIndex = indexOfFirstImgTag + imgTagHeader.length();
+        int endIndex = startIndex + 1;
+        while (content.charAt(endIndex) != '\"'){
+            endIndex++;
         }
 
-        return ReturnData.buildSuccessResult(ArticleResult.PUBLISH_SUCCESS.toString());
+        String imgPath = content.substring(startIndex, endIndex + 1);
+        article.setImgPath(imgPath);
+        articleMapper.insert(article);
+        // 获取自增主键
+        Integer articleId = article.getArticleId();
+
+        // 添加文章标签记录
+        ArticleTagKey articleTagKey = new ArticleTagKey();
+        articleTagKey.setArticleId(articleId);
+        List<Integer> tagIdList = articleParam.getTagIdList();
+        for (Integer tagId: tagIdList) {
+            articleTagKey.setTagId(tagId);
+            articleTagMapper.insert(articleTagKey);
+        }
+
+        return ReturnData.buildSuccessResult("");
     }
 
 
@@ -70,7 +103,7 @@ public class ArticleServiceImpl implements ArticleService {
     public ReturnData getNewestArticleByPageNo(Integer pageNo) {
         List<ArticlePojo> articlePojoList =  articleMapper.selectArtilceWithStartIndexAndLimitNum(
                 (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
-        if (articlePojoList == null) {
+        if (articlePojoList.size() == 0) {
             return ReturnData.buildFailResult("");
         }
 
@@ -83,7 +116,7 @@ public class ArticleServiceImpl implements ArticleService {
     public ReturnData getArticleByArticleId(Integer articleId) {
         ArticlePojo articlePojo = articleMapper.selectByArticleId(articleId);
 
-        if (articlePojo == null) {
+        if (articlePojo.getArticleId() == null) {
             ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
@@ -116,7 +149,7 @@ public class ArticleServiceImpl implements ArticleService {
         List<ArticlePojo> articlePojoList =
                 articleMapper.selectArtilceByCategoryIdWithStartIndexAndLimitNum(categoryId,
                 (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
-        if (articlePojoList == null) {
+        if (articlePojoList.size() == 0) {
             return ReturnData.buildFailResult("");
         }
 
@@ -154,6 +187,8 @@ public class ArticleServiceImpl implements ArticleService {
         ((HashMap) map).put("totalNumOfArticle", totalNumOfArticle);
         return ReturnData.buildSuccessResult(map);
     }
+
+
 
 
     enum ArticleResult {

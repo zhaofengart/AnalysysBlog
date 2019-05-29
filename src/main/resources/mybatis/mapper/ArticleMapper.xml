@@ -258,13 +258,12 @@
   </select>
 
 
-
   <!-- 获取热门文章，只含articleId和title -->
   <select id="selectPopularArticleWithLimitNum" resultMap="SimpleArticlePojo">
     select
     article_id, title
     from article
-    order by scan_num desc
+    order by scan_num desc, issue_time desc
     limit #{limitNum}
   </select>
 

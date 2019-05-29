@@ -62,7 +62,7 @@ public interface ArticleService {
      * @param articleId 文章id
      * @return
      */
-    ReturnData getArticleByArticleId(Integer articleId);
+    ReturnData getArticle(Integer tagId, Integer categoryId, Integer articleId);
 
 
     /**

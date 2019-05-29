@@ -40,9 +40,9 @@ public class ArticleController extends BaseController {
 
 
     // 根据文章id获取文章
-    @RequestMapping("/{articleId}")
-    public ReturnData getArticleByArticleId(@PathVariable("articleId") Integer articleId){
-        return articleService.getArticleByArticleId(articleId);
+    @RequestMapping("/getArticle")
+    public ReturnData getArticleByArticleId(Integer tagId, Integer categoryId, Integer articleId){
+        return articleService.getArticle(tagId, categoryId, articleId);
     }
 
 
@@ -57,9 +57,7 @@ public class ArticleController extends BaseController {
     @RequestMapping("/uploadMutilPartFile")
     public WangEditor uploadMutilPartFile(@RequestParam("myFile") MultipartFile multipartFile,
                                           HttpServletRequest request) throws IOException {
-        FileHandleUtil.upload(multipartFile.getInputStream(), multipartFile.getOriginalFilename());
-
-        return FileUtil.upload(multipartFile, request);
+        return FileHandleUtil.upload(multipartFile,request);
     }
 
 
@@ -89,16 +87,16 @@ public class ArticleController extends BaseController {
     }
 
 
-    @RequestMapping("/previous")
-    public ReturnData getPreviousArticle(Integer tagId, Integer categoryId, Integer articleId){
-        return articleService.getPreviousArticle(tagId, categoryId, articleId);
-    }
-
-
-    @RequestMapping("/next")
-    public ReturnData getNextArticle(Integer tagId, Integer categoryId, Integer articleId){
-        return articleService.getNextArticle(tagId, categoryId, articleId);
-    }
+//    @RequestMapping("/previous")
+//    public ReturnData getPreviousArticle(Integer tagId, Integer categoryId, Integer articleId){
+//        return articleService.getPreviousArticle(tagId, categoryId, articleId);
+//    }
+//
+//
+//    @RequestMapping("/next")
+//    public ReturnData getNextArticle(Integer tagId, Integer categoryId, Integer articleId){
+//        return articleService.getNextArticle(tagId, categoryId, articleId);
+//    }
 
 
     @RequestMapping("/totalNumOfArticle")

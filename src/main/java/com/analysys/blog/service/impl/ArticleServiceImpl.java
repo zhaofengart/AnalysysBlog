@@ -13,7 +13,9 @@ import com.analysys.blog.service.ArticleService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author zhaofeng
@@ -45,27 +47,38 @@ public class ArticleServiceImpl implements ArticleService {
         article.setUserId(articleParam.getUserId());
         article.setSummary(articleParam.getSummary());
 
+        getUrlOfFirstImage(articleParam, article);
+
+        articleMapper.insert(article);
+
+        addArticleTagRecord(articleParam, article);
+
+        return ReturnData.buildSuccessResult(ArticleResult.PUBLISH_SUCCESS.toString());
+    }
+
+    private void getUrlOfFirstImage(ArticleParam articleParam, Article article) {
         // 获取第一张图片url
         String content = articleParam.getContent();
         System.out.println(content);
+
         String imgTagHeader = "<img src=";
         int indexOfFirstImgTag = content.indexOf(imgTagHeader);
 
         if (indexOfFirstImgTag != -1) {
             // 第一张图片url第一个双引号
-            int startIndex = indexOfFirstImgTag + imgTagHeader.length();
-            int endIndex = startIndex + 1;
+            int startIndex = indexOfFirstImgTag + imgTagHeader.length() + 1;
+            int endIndex = startIndex;
             while (content.charAt(endIndex) != '\"'){
                 endIndex++;
             }
 
-            String imgPath = content.substring(startIndex, endIndex + 1);
+            String imgPath = content.substring(startIndex, endIndex);
             article.setImgPath(imgPath);
         }
+    }
 
 
-
-        articleMapper.insert(article);
+    private void addArticleTagRecord(ArticleParam articleParam, Article article) {
         // 获取自增主键
         Integer articleId = article.getArticleId();
 
@@ -77,13 +90,7 @@ public class ArticleServiceImpl implements ArticleService {
             articleTagKey.setTagId(tagId);
             articleTagMapper.insert(articleTagKey);
         }
-
-        return ReturnData.buildSuccessResult(ArticleResult.PUBLISH_SUCCESS.toString());
     }
-
-
-
-
 
 
     @Override
@@ -126,14 +133,20 @@ public class ArticleServiceImpl implements ArticleService {
 
 
     @Override
-    public ReturnData getArticleByArticleId(Integer articleId) {
-        ArticlePojo articlePojo = articleMapper.selectByArticleId(articleId);
+    public ReturnData getArticle(Integer tagId, Integer categoryId, Integer articleId) {
+        ArticlePojo article = articleMapper.selectByArticleId(articleId);
+        SimpleArticlePojo previous = articleMapper.selectPreviousArticle(tagId, categoryId, articleId);
+        SimpleArticlePojo next = articleMapper.selectNextArticle(tagId, categoryId, articleId);
 
-        if (articlePojo == null) {
+        if (article == null) {
             ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
+        Map<String, Object> map = new HashMap<>();
+        map.put("article", article);
+        map.put("previous", previous);
+        map.put("next", next);
 
-        return ReturnData.buildSuccessResult(articlePojo);
+        return ReturnData.buildSuccessResult(map);
     }
 
 

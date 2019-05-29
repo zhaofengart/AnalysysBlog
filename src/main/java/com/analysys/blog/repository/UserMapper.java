@@ -70,4 +70,13 @@ public interface UserMapper {
      * @return
      */
     Integer updatePassword(Integer userId, String password);
+
+
+    /**
+     * 根据用户名查询用户
+     *
+     * @param
+     * @return 
+     */
+    User selectUserByUsername(String username);
 }

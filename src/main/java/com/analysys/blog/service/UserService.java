@@ -14,7 +14,7 @@ public interface UserService {
      * 登录
      *
      * @param
-     * @return 
+     * @return
      */
     ReturnData login(String username, String password);
 
@@ -23,7 +23,7 @@ public interface UserService {
      * 注册
      *
      * @param
-     * @return 
+     * @return
      */
     ReturnData register(User user);
 
@@ -32,7 +32,9 @@ public interface UserService {
      * 更新密码
      *
      * @param
-     * @return 
+     * @return
      */
     ReturnData updatePassword(Integer userId, String oldPassword, String newPassword);
+
+
 }

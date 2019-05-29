@@ -35,12 +35,22 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ReturnData register(User user) {
+        if (user.getUsername() == null || user.getPassword() == null){
+            return ReturnData.buildFailResult(UserResult.USERNAME_OR_PASSWORD_CAN_NOT_BE_NULL.toString());
+        }
+        System.out.println("进入注册");
+
+        User userResult = userMapper.selectUserByUsername(user.getUsername());
+        if (userResult != null) {
+            return ReturnData.buildFailResult(UserResult.USERNAME_ALREADY_EXISTS.toString());
+        }
+
         int result = userMapper.insert(user);
         if (result != 1) {
             return ReturnData.buildFailResult(UserResult.REGISTER_FAILURE.toString());
         }
 
-        return ReturnData.buildSuccessResult(UserResult.REGISTER_SUCCESS.toString());
+        return ReturnData.buildSuccessResult(user.getUserId());
     }
 
     @Override
@@ -53,11 +63,14 @@ public class UserServiceImpl implements UserService {
         return ReturnData.buildSuccessResult(UserResult.UPDATE_SUCCESS.toString());
     }
 
+
+
     enum UserResult {
 
         REGISTER_FAILURE("注册失败"),
-        REGISTER_SUCCESS("注册成功"),
-        USERNAME_OR_PASSWORD_ERROR("登陆失败，详细信息[用户名、密码信息不正确]。"),
+        USERNAME_OR_PASSWORD_CAN_NOT_BE_NULL("用户名或密码不能为空"),
+        USERNAME_ALREADY_EXISTS("用户名已存在"),
+        USERNAME_OR_PASSWORD_ERROR("登陆失败，用户名、密码信息不正确。"),
         UPDATE_FAILURE("更新失败"),
         UPDATE_SUCCESS("更新成功");
 

@@ -46,4 +46,10 @@ public class TagController extends BaseController {
         return tagService.getPopularTag();
     }
 
+
+    @PostMapping("/addTag")
+    public ReturnData addTag(String tagName){
+        return tagService.addTag(tagName);
+    }
+
 }

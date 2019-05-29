@@ -10,10 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.time.Instant;
-import java.util.Calendar;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Random;
 
 /**
  * @author zhaofeng
@@ -57,12 +56,18 @@ public class FileUtil {
 
     // 根据时间生成文件名
     private static String generateFileName(MultipartFile file){
-        String originalFileName = file.getOriginalFilename();
-        String suffix = originalFileName.substring(originalFileName.lastIndexOf('.'));
-        Calendar calendar = Calendar.getInstance();
-        return String.format("%d%02d%02d%02d%02d%02d%02d%s", calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH),
-                calendar.get(Calendar.HOUR), calendar.get(Calendar.MINUTE), calendar.get(Calendar.SECOND), calendar.get(Calendar.MILLISECOND), suffix);
-    }
+
+        //获得文件名
+        String filename = file.getOriginalFilename();
+        //截取文件后缀
+        String fileSuffix = filename.substring(filename.lastIndexOf(".")).toLowerCase();
+        //时间格式化对象
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyyMMddHHmmss");
+        //生成时间戳
+        String newFilename = simpleDateFormat.format(new Date());
+        //生成新的文件名
+        return newFilename + new Random().nextInt(1000) + fileSuffix;
+      }
 
 
 }

@@ -1,6 +1,7 @@
 package com.analysys.blog.service;
 
 import com.analysys.blog.common.ReturnData;
+import com.analysys.blog.entity.Tag;
 
 /**
  * @author zhaofeng
@@ -25,4 +26,13 @@ public interface TagService {
      * @return 
      */
     ReturnData getPopularTag();
+
+
+    /**
+     * 添加标签
+     *
+     * @param
+     * @return
+     */
+    ReturnData addTag(String tagName);
 }

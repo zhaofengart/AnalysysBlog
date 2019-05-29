@@ -37,10 +37,18 @@ public class TagServiceImpl implements TagService {
     public ReturnData getPopularTag() {
         List<Tag> tagList = tagMapper.selectPopularTagWithLimitNum(DEFAULT_FETCH_NUM_OF_POPULAR_TAG);
 
-        if (tagList == null) {
+        if (tagList == null || tagList.isEmpty()) {
             return ReturnData.buildFailResult("标签获取失败");
         }
 
         return ReturnData.buildSuccessResult(tagList);
+    }
+
+    @Override
+    public ReturnData addTag(String tagName) {
+        Tag tag = new Tag();
+        tag.setTagName(tagName);
+        tagMapper.insert(tag);
+        return ReturnData.buildSuccessResult(tag);
     }
 }

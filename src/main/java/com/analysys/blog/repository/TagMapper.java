@@ -63,6 +63,12 @@ public interface TagMapper {
     List<Tag> selectTagByArticleId(Integer articleId);
 
 
+    /**
+     * 获取热门标签
+     *
+     * @param
+     * @return
+     */
     List<Tag> selectPopularTagWithLimitNum(Integer defaultFetchNumOfPopularTag);
     
     

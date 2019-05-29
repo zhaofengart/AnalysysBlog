@@ -82,6 +82,10 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
 
+
+
+
+
     @Override
     public ReturnData update(Article article) {
         articleMapper.updateByPrimaryKey(article);
@@ -125,11 +129,9 @@ public class ArticleServiceImpl implements ArticleService {
     public ReturnData getArticleByArticleId(Integer articleId) {
         ArticlePojo articlePojo = articleMapper.selectByArticleId(articleId);
 
-        if (articlePojo.getArticleId() == null) {
+        if (articlePojo == null) {
             ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
-
-
 
         return ReturnData.buildSuccessResult(articlePojo);
     }

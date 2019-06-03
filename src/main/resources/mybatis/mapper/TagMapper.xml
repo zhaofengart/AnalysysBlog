@@ -47,7 +47,7 @@
     -->
     insert into tag (tag_id, tag_name, call_num
       )
-    values (#{tagId,jdbcType=INTEGER}, #{tagName,jdbcType=VARCHAR}, #{callNum,jdbcType=INTEGER}
+    values (#{tagId,jdbcType=INTEGER}, #{tagName,jdbcType=VARCHAR}, 0
       )
   </insert>
   <insert id="insertSelective" parameterType="com.analysys.blog.entity.Tag">

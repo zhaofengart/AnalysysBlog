@@ -116,6 +116,8 @@ public class ArticleServiceImpl implements ArticleService {
             return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
+        tagMapper.addOneToCallNumByTagId(tagId);
+
         return ReturnData.buildSuccessResult(articlePojoList);
     }
 
@@ -141,6 +143,9 @@ public class ArticleServiceImpl implements ArticleService {
         if (article == null) {
             ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
+
+        articleMapper.addOneToScanNumByArticleId(articleId);
+
         Map<String, Object> map = new HashMap<>();
         map.put("article", article);
         map.put("previous", previous);

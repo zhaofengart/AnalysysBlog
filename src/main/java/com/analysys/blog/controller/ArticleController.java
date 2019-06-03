@@ -87,19 +87,7 @@ public class ArticleController extends BaseController {
     }
 
 
-//    @RequestMapping("/previous")
-//    public ReturnData getPreviousArticle(Integer tagId, Integer categoryId, Integer articleId){
-//        return articleService.getPreviousArticle(tagId, categoryId, articleId);
-//    }
-//
-//
-//    @RequestMapping("/next")
-//    public ReturnData getNextArticle(Integer tagId, Integer categoryId, Integer articleId){
-//        return articleService.getNextArticle(tagId, categoryId, articleId);
-//    }
-
-
-    @RequestMapping("/totalNumOfArticle")
+    @RequestMapping("/getTotalNumOfArticle")
     public ReturnData getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId) {
         return articleService.getTotalNumOfArticleByCategoryIdOrTagId(categoryId, tagId);
     }

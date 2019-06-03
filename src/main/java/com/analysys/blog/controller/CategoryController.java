@@ -26,7 +26,4 @@ public class CategoryController extends BaseController {
         return articleService.getArticleByCategoryIdAndPageNo(categoryId, pageNo);
     }
 
-
-
-
 }

@@ -73,7 +73,7 @@
       img_path, summary, content
       )
     values (#{categoryId,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR},
-      #{userId,jdbcType=INTEGER}, now(), #{scanNum,jdbcType=INTEGER},
+      #{userId,jdbcType=INTEGER}, now(), 0,
       #{imgPath,jdbcType=VARCHAR}, #{summary,jdbcType=VARCHAR}, #{content,jdbcType=LONGVARCHAR}
       )
   </insert>
@@ -323,7 +323,7 @@
 
 
   <!-- 根据标签id、类别id和当前文章id获取取下一篇文章的id和title -->
-  <select id="selectNextArticle" resultType="com.analysys.blog.pojo.SimpleArticlePojo">
+  <select id="selectNextArticle" resultMap="SimpleArticlePojo">
     select a.article_id, title
     from article a, article_tag atg
     where a.article_id = atg.article_id
@@ -365,7 +365,7 @@
   <update id="addOneToScanNumByArticleId">
     update article
     set scan_num = scan_num + 1
-    where articleId = articleId;
+    where article_id = #{articleId}
   </update>
 
 </mapper>

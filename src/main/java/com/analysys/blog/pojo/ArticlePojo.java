@@ -22,7 +22,7 @@ public class ArticlePojo {
 
     private String content;
 
-    private String username;
+    private String realname;
 
     private Date issueTime;
 
@@ -68,12 +68,12 @@ public class ArticlePojo {
         this.content = content;
     }
 
-    public String getUsername() {
-        return username;
+    public String getRealname() {
+        return realname;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setRealname(String realname) {
+        this.realname = realname;
     }
 
     public String getIssueTime() {

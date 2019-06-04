@@ -1,6 +1,7 @@
 package com.analysys.blog.controller;
 
-import com.analysys.blog.common.ReturnData;
+import com.analysys.blog.common.JsonResult;
+import com.analysys.blog.common.RtCode;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -15,9 +16,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public abstract class BaseController {
 
     @ExceptionHandler(value = Exception.class)
-    public ReturnData handle(Exception e){
+    public JsonResult handle(Exception e){
         System.out.println(e.getMessage());
-        return ReturnData.buildFailResult(e.getMessage());
+        return new JsonResult(RtCode.ERROR, e.getMessage());
     }
 
 }

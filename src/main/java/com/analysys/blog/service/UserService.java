@@ -1,6 +1,6 @@
 package com.analysys.blog.service;
 
-import com.analysys.blog.common.ReturnData;
+import com.analysys.blog.common.JsonResult;
 import com.analysys.blog.entity.User;
 
 /**
@@ -16,7 +16,7 @@ public interface UserService {
      * @param
      * @return
      */
-    ReturnData login(String username, String password);
+    JsonResult login(String username, String password);
 
 
     /**
@@ -25,7 +25,7 @@ public interface UserService {
      * @param
      * @return
      */
-    ReturnData register(User user);
+    JsonResult register(User user);
 
 
     /**
@@ -34,7 +34,7 @@ public interface UserService {
      * @param
      * @return
      */
-    ReturnData updatePassword(Integer userId, String oldPassword, String newPassword);
+    JsonResult updatePassword(Integer userId, String oldPassword, String newPassword);
 
 
 }

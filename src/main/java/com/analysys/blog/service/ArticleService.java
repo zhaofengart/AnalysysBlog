@@ -1,10 +1,11 @@
 package com.analysys.blog.service;
 
-import com.analysys.blog.common.ReturnData;
+import com.analysys.blog.common.JsonResult;
 import com.analysys.blog.entity.Article;
 import com.analysys.blog.pojo.ArticleParam;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author zhaofeng
@@ -19,14 +20,14 @@ public interface ArticleService {
      * @param
      * @return
      */
-    ReturnData publishArticle(ArticleParam articleParam);
+    JsonResult publishArticle(ArticleParam articleParam);
     /**
      * 修改文章
      *
      * @param
      * @return
      */
-    ReturnData update(Article article);
+    JsonResult update(Article article);
 
 
     /**
@@ -35,7 +36,7 @@ public interface ArticleService {
      * @param
      * @return
      */
-    ReturnData getNewestArticle();
+    JsonResult getNewestArticle();
 
 
     /**
@@ -44,7 +45,7 @@ public interface ArticleService {
      * @param
      * @return
      */
-    ReturnData getNewestArticleByTagIdAndPageNo(Integer tagId, Integer pageNo);
+    JsonResult getNewestArticleByTagIdAndPageNo(Integer tagId, Integer pageNo);
 
 
     /**
@@ -53,7 +54,7 @@ public interface ArticleService {
      * @param
      * @return
      */
-    ReturnData getNewestArticleByPageNo(Integer pageNo);
+    JsonResult getNewestArticleByPageNo(Integer pageNo);
 
 
     /**
@@ -62,7 +63,7 @@ public interface ArticleService {
      * @param articleId 文章id
      * @return
      */
-    ReturnData getArticle(Integer tagId, Integer categoryId, Integer articleId);
+    JsonResult getArticle(Integer tagId, Integer categoryId, Integer articleId);
 
 
     /**
@@ -71,7 +72,7 @@ public interface ArticleService {
      * @param
      * @return
      */
-    ReturnData getPopularArticle();
+    JsonResult getPopularArticle();
 
 
     /**
@@ -80,7 +81,7 @@ public interface ArticleService {
      * @param
      * @return
      */
-    ReturnData getArticleByCategoryIdAndPageNo(Integer categoryId, Integer pageNo);
+    JsonResult getArticleByCategoryIdAndPageNo(Integer categoryId, Integer pageNo);
 
 
 
@@ -90,26 +91,7 @@ public interface ArticleService {
      * @param
      * @return
      */
-    ReturnData getNewestArticleByTagId(Integer tagId);
-
-
-
-    /**
-     * 根据标签id、类别id和当前文章id获取取上一篇文章的id和title
-     *
-     * @param
-     * @return
-     */
-    ReturnData getPreviousArticle(Integer tagId, Integer categoryId, Integer articleId);
-
-
-    /**
-     * 根据标签id、类别id和当前文章id获取取下一篇文章的id和title
-     *
-     * @param
-     * @return
-     */
-    ReturnData getNextArticle(Integer tagId, Integer categoryId, Integer articleId);
+    JsonResult getNewestArticleByTagId(Integer tagId);
 
 
     /**
@@ -118,7 +100,7 @@ public interface ArticleService {
      * @param
      * @return 
      */
-    ReturnData getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId);
+    JsonResult getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId);
     
 
 

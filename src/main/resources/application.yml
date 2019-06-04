@@ -1,6 +1,10 @@
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
   config-location: classpath:/mybatis/config/mybatis-config.xml
+#  type-aliases-package: com.analysys.blog.entity
+#  configuration:
+#    map-underscore-to-camel-case: true
+
 spring:
   datasource:
     username: root
@@ -8,10 +12,11 @@ spring:
     url: jdbc:mysql://localhost:3306/yiguan?characterEncoding=utf8&serverTimezone=UTC&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-  # 静态资源路径
-  resources:
-    static-locations: classpath:static/,file:static/
+#  # 静态资源路径
+#  resources:
+#    static-locations: classpath:static/,file:static/
 logging:
   level:
     com.analysys.repository: DEBUG
-
+  file:
+    logs/application.log

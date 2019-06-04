@@ -1,6 +1,7 @@
 package com.analysys.blog.service.impl;
 
-import com.analysys.blog.common.ReturnData;
+import com.analysys.blog.common.JsonResult;
+import com.analysys.blog.common.RtCode;
 import com.analysys.blog.entity.Tag;
 import com.analysys.blog.repository.TagMapper;
 import com.analysys.blog.service.TagService;
@@ -23,32 +24,32 @@ public class TagServiceImpl implements TagService {
     private TagMapper tagMapper;
 
     @Override
-    public ReturnData getTagByTagId(Integer tagId) {
+    public JsonResult getTagByTagId(Integer tagId) {
 
         Tag tag = tagMapper.selectByPrimaryKey(tagId);
         if (tag == null) {
-            return ReturnData.buildFailResult("失败");
+            return new JsonResult(RtCode.BadRequest, "参数错误");
         }
 
-        return ReturnData.buildSuccessResult(tag);
+        return new JsonResult(tag);
     }
 
     @Override
-    public ReturnData getPopularTag() {
+    public JsonResult getPopularTag() {
         List<Tag> tagList = tagMapper.selectPopularTagWithLimitNum(DEFAULT_FETCH_NUM_OF_POPULAR_TAG);
 
         if (tagList == null || tagList.isEmpty()) {
-            return ReturnData.buildFailResult("标签获取失败");
+            return new JsonResult<>(RtCode.DBERROR, "数据库错误");
         }
 
-        return ReturnData.buildSuccessResult(tagList);
+        return new JsonResult<>(tagList);
     }
 
     @Override
-    public ReturnData addTag(String tagName) {
+    public JsonResult addTag(String tagName) {
         Tag tag = new Tag();
         tag.setTagName(tagName);
         tagMapper.insert(tag);
-        return ReturnData.buildSuccessResult(tag);
+        return new JsonResult(tag);
     }
 }

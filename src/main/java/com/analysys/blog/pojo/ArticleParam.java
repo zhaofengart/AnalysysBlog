@@ -28,6 +28,15 @@ public class ArticleParam {
      */
     private List<Integer> tagIdList;
 
+    private List<String> newTagList;
+
+    public List<String> getNewTagList() {
+        return newTagList;
+    }
+
+    public void setNewTagList(List<String> newTagList) {
+        this.newTagList = newTagList;
+    }
 
     public Integer getCategoryId() {
         return categoryId;

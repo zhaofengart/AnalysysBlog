@@ -1,7 +1,6 @@
 package com.analysys.blog.service;
 
-import com.analysys.blog.common.ReturnData;
-import com.analysys.blog.entity.Tag;
+import com.analysys.blog.common.JsonResult;
 
 /**
  * @author zhaofeng
@@ -16,7 +15,7 @@ public interface TagService {
      * @param
      * @return 
      */
-    ReturnData getTagByTagId(Integer tagId);
+    JsonResult getTagByTagId(Integer tagId);
 
 
     /**
@@ -25,7 +24,7 @@ public interface TagService {
      * @param
      * @return 
      */
-    ReturnData getPopularTag();
+    JsonResult getPopularTag();
 
 
     /**
@@ -34,5 +33,5 @@ public interface TagService {
      * @param
      * @return
      */
-    ReturnData addTag(String tagName);
+    JsonResult addTag(String tagName);
 }

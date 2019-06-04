@@ -1,6 +1,6 @@
 package com.analysys.blog.controller;
 
-import com.analysys.blog.common.ReturnData;
+import com.analysys.blog.common.JsonResult;
 import com.analysys.blog.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -22,7 +22,7 @@ public class CategoryController extends BaseController {
 
     // 根据类别id获取文章
     @RequestMapping("/")
-    public ReturnData getArticleByCategoryIdAndPageNo(Integer categoryId, Integer pageNo){
+    public JsonResult getArticleByCategoryIdAndPageNo(Integer categoryId, Integer pageNo){
         return articleService.getArticleByCategoryIdAndPageNo(categoryId, pageNo);
     }
 

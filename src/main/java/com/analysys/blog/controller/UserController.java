@@ -1,6 +1,6 @@
 package com.analysys.blog.controller;
 
-import com.analysys.blog.common.ReturnData;
+import com.analysys.blog.common.JsonResult;
 import com.analysys.blog.entity.User;
 import com.analysys.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,17 +25,18 @@ public class UserController extends BaseController {
     private UserService userService;
 
     @PostMapping("/login")
-    public ReturnData login(String username, String password, HttpServletRequest request){
+    public JsonResult login(String username, String password){
+        System.out.println(username+password);
         return userService.login(username, password);
     }
 
     @PostMapping("/register")
-    public ReturnData register(User user){
+    public JsonResult register(User user){
         return userService.register(user);
     }
 
     @PostMapping("/updatePassword")
-    public ReturnData updatePassword(Integer userId, String oldPassword, String newPassword){
+    public JsonResult updatePassword(Integer userId, String oldPassword, String newPassword){
         return userService.updatePassword(userId, oldPassword, newPassword);
     }
 

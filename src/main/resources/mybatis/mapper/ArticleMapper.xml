@@ -222,7 +222,7 @@
     <result column="category_id" jdbcType="INTEGER" property="categoryId" />
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="content" jdbcType="LONGVARCHAR" property="content" />
-    <result column="username" jdbcType="INTEGER" property="username" />
+    <result column="realname" jdbcType="INTEGER" property="realname" />
     <result column="issue_time" jdbcType="TIMESTAMP" property="issueTime" />
     <result column="img_path" jdbcType="VARCHAR" property="imgPath" />
     <result column="summary" jdbcType="VARCHAR" property="summary" />
@@ -240,7 +240,7 @@
   <!-- 根据文章id获取完整文章 -->
   <select id="selectByArticleId" resultMap="ArticlePojo">
     select
-    a.article_id, a.category_id, title, username, issue_time, img_path, content
+    a.article_id, a.category_id, title, realname, issue_time, img_path, content
     from article a, user u
     where a.user_id = u.user_id
     and a.article_id = #{articleId}
@@ -250,7 +250,7 @@
   <!-- 获取最新文章 -->
   <select id="selectNewestArticleWithLimitNum" resultMap="ArticlePojo">
     select
-    a.article_id, a.category_id, title, username, issue_time, img_path, summary
+    a.article_id, a.category_id, title, realname, issue_time, img_path, summary
     from article a, user u
     where a.user_id = u.user_id
     order by issue_time desc
@@ -271,7 +271,7 @@
   <!-- 根据类别id获取文章 -->
   <select id="selectArtilceByCategoryIdWithStartIndexAndLimitNum" resultMap="ArticlePojo">
     select
-    a.article_id, a.category_id, title, username, issue_time, img_path, summary
+    a.article_id, a.category_id, title, realname, issue_time, img_path, summary
     from article a, user u
     where a.user_id = u.user_id
     and a.category_id = #{categoryId}
@@ -283,7 +283,7 @@
   <!-- 根据标签id获取最新文章 -->
   <select id="selectArtilceByTagIdWithStartIndexAndLimitNum" resultMap="ArticlePojo">
     select
-    a.article_id, a.category_id, title, username, issue_time, img_path, summary
+    a.article_id, a.category_id, title, realname, issue_time, img_path, summary
     from article a, user u
     where a.user_id = u.user_id
     and a.article_id in
@@ -296,7 +296,7 @@
   <!-- 不带标签根据下标和页码获取最新文章 -->
   <select id="selectArtilceWithStartIndexAndLimitNum" resultMap="ArticlePojo">
     select
-    a.article_id, a.category_id, title, username, issue_time, img_path, summary
+    a.article_id, a.category_id, title, realname, issue_time, img_path, summary
     from article a, user u
     where a.user_id = u.user_id
     order by issue_time desc

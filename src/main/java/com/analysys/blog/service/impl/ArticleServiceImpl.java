@@ -1,8 +1,10 @@
 package com.analysys.blog.service.impl;
 
-import com.analysys.blog.common.ReturnData;
+import com.analysys.blog.common.JsonResult;
+import com.analysys.blog.common.RtCode;
 import com.analysys.blog.entity.Article;
 import com.analysys.blog.entity.ArticleTagKey;
+import com.analysys.blog.entity.Tag;
 import com.analysys.blog.pojo.ArticleParam;
 import com.analysys.blog.pojo.ArticlePojo;
 import com.analysys.blog.pojo.SimpleArticlePojo;
@@ -39,7 +41,7 @@ public class ArticleServiceImpl implements ArticleService {
     private TagMapper tagMapper;
 
     @Override
-    public ReturnData publishArticle(ArticleParam articleParam) {
+    public JsonResult publishArticle(ArticleParam articleParam) {
         Article article = new Article();
         article.setCategoryId(articleParam.getCategoryId());
         article.setTitle(articleParam.getTitle());
@@ -53,7 +55,7 @@ public class ArticleServiceImpl implements ArticleService {
 
         addArticleTagRecord(articleParam, article);
 
-        return ReturnData.buildSuccessResult(ArticleResult.PUBLISH_SUCCESS.toString());
+        return new JsonResult();
     }
 
     private void getUrlOfFirstImage(ArticleParam articleParam, Article article) {
@@ -81,11 +83,28 @@ public class ArticleServiceImpl implements ArticleService {
     private void addArticleTagRecord(ArticleParam articleParam, Article article) {
         // 获取自增主键
         Integer articleId = article.getArticleId();
+        List<Integer> tagIdList = articleParam.getTagIdList();
+
+        // 新增标签
+        List<String> newTagList = articleParam.getNewTagList();
+        if (newTagList != null) {
+            System.out.println("标签添加");
+            Tag tag = new Tag();
+            for(String item: newTagList) {
+                System.out.println("标签内容" + item);
+                tag.setTagId(null);
+                tag.setTagName(item);
+                tagMapper.insert(tag);
+                tagIdList.add(tag.getTagId());
+            }
+        }
+
+
 
         // 添加文章标签记录
         ArticleTagKey articleTagKey = new ArticleTagKey();
         articleTagKey.setArticleId(articleId);
-        List<Integer> tagIdList = articleParam.getTagIdList();
+
         for (Integer tagId: tagIdList) {
             articleTagKey.setTagId(tagId);
             articleTagMapper.insert(articleTagKey);
@@ -94,54 +113,54 @@ public class ArticleServiceImpl implements ArticleService {
 
 
     @Override
-    public ReturnData update(Article article) {
+    public JsonResult update(Article article) {
         articleMapper.updateByPrimaryKey(article);
-        return ReturnData.buildSuccessResult(ArticleResult.UPDATE_SUCCESS.toString());
+        return new JsonResult();
     }
 
 
     @Override
-    public ReturnData getNewestArticle() {
-        List<ArticlePojo> articlePojoList = articleMapper.selectNewestArticleWithLimitNum(DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
+    public JsonResult getNewestArticle() {
+            List<ArticlePojo> articlePojoList = articleMapper.selectNewestArticleWithLimitNum(DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
 
-        return ReturnData.buildSuccessResult(articlePojoList);
+            return new JsonResult<>(articlePojoList);
     }
 
 
     @Override
-    public ReturnData getNewestArticleByTagIdAndPageNo(Integer tagId, Integer pageNo) {
+    public JsonResult getNewestArticleByTagIdAndPageNo(Integer tagId, Integer pageNo) {
         List<ArticlePojo> articlePojoList = articleMapper.selectArtilceByTagIdWithStartIndexAndLimitNum(
                 tagId, (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE );
         if (articlePojoList.isEmpty()) {
-            return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         tagMapper.addOneToCallNumByTagId(tagId);
 
-        return ReturnData.buildSuccessResult(articlePojoList);
+        return new JsonResult(articlePojoList);
     }
 
     @Override
-    public ReturnData getNewestArticleByPageNo(Integer pageNo) {
+    public JsonResult getNewestArticleByPageNo(Integer pageNo) {
         List<ArticlePojo> articlePojoList =  articleMapper.selectArtilceWithStartIndexAndLimitNum(
                 (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
         if (articlePojoList.isEmpty()) {
-            return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult<>(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
-        return ReturnData.buildSuccessResult(articlePojoList);
+        return new JsonResult<>(articlePojoList);
     }
 
 
 
     @Override
-    public ReturnData getArticle(Integer tagId, Integer categoryId, Integer articleId) {
+    public JsonResult getArticle(Integer tagId, Integer categoryId, Integer articleId) {
         ArticlePojo article = articleMapper.selectByArticleId(articleId);
         SimpleArticlePojo previous = articleMapper.selectPreviousArticle(tagId, categoryId, articleId);
         SimpleArticlePojo next = articleMapper.selectNextArticle(tagId, categoryId, articleId);
 
         if (article == null) {
-            ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         articleMapper.addOneToScanNumByArticleId(articleId);
@@ -151,23 +170,23 @@ public class ArticleServiceImpl implements ArticleService {
         map.put("previous", previous);
         map.put("next", next);
 
-        return ReturnData.buildSuccessResult(map);
+        return new JsonResult<>(map);
     }
 
 
     @Override
-    public ReturnData getPopularArticle() {
+    public JsonResult getPopularArticle() {
         List<SimpleArticlePojo> articlePojoList = articleMapper.selectPopularArticleWithLimitNum(DEFAULT_FETCH_NUM_OF_POPULAR_ARTICLE);
         if (articlePojoList.isEmpty()) {
-            ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.DBERROR, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
-        return ReturnData.buildSuccessResult(articlePojoList);
+        return new JsonResult<>(articlePojoList);
     }
 
 
     @Override
-    public ReturnData getArticleByCategoryIdAndPageNo(Integer categoryId, Integer pageNo) {
+    public JsonResult getArticleByCategoryIdAndPageNo(Integer categoryId, Integer pageNo) {
         if (pageNo == null || pageNo <= 0) {
             pageNo = 1;
         }
@@ -176,52 +195,38 @@ public class ArticleServiceImpl implements ArticleService {
                 articleMapper.selectArtilceByCategoryIdWithStartIndexAndLimitNum(categoryId,
                 (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
         if (articlePojoList.isEmpty()) {
-            return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
-        return ReturnData.buildSuccessResult(articlePojoList);
+        return new JsonResult(articlePojoList);
     }
 
 
     @Override
-    public ReturnData getNewestArticleByTagId(Integer tagId) {
+    public JsonResult getNewestArticleByTagId(Integer tagId) {
         List<ArticlePojo> articlePojoList = articleMapper.selectArtilceByTagIdWithStartIndexAndLimitNum(tagId, 0, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
         if (articlePojoList.isEmpty()) {
-            return ReturnData.buildFailResult(ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         tagMapper.addOneToCallNumByTagId(tagId);
 
-        return ReturnData.buildSuccessResult(articlePojoList);
+        return new JsonResult(articlePojoList);
     }
 
 
     @Override
-    public ReturnData getPreviousArticle(Integer tagId, Integer categoryId, Integer articleId) {
-        SimpleArticlePojo simpleArticlePojo = articleMapper.selectPreviousArticle(tagId, categoryId, articleId);
-        return ReturnData.buildSuccessResult(simpleArticlePojo);
-    }
-
-    @Override
-    public ReturnData getNextArticle(Integer tagId, Integer categoryId, Integer articleId) {
-        SimpleArticlePojo simpleArticlePojo = articleMapper.selectNextArticle(tagId, categoryId, articleId);
-        return ReturnData.buildSuccessResult(simpleArticlePojo);
-    }
-
-    @Override
-    public ReturnData getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId) {
+    public JsonResult getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId) {
         Integer totalNumOfArticle = articleMapper.selectTotalNumOfArticleByCategoryIdOrTagId(categoryId, tagId);
-        return ReturnData.buildSuccessResult(totalNumOfArticle);
+        return new JsonResult(totalNumOfArticle);
     }
 
 
 
     enum ArticleResult {
 
-        PUBLISH_SUCCESS("文章发布成功"),
         PUBLISH_FAILURE("文章发布失败"),
-        NO_MATCHING_ARTICLE("没有匹配的文章"),
-        UPDATE_SUCCESS("修改成功");
+        NO_MATCHING_ARTICLE("没有匹配的文章");
 
         private String articleResult;
 

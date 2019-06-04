@@ -5,7 +5,6 @@ package com.analysys.blog.util;
  * @date 2019/5/28
  */
 
-import com.analysys.blog.common.ReturnData;
 import com.analysys.blog.pojo.WangEditor;
 import org.apache.commons.io.FileUtils;
 import org.springframework.util.ResourceUtils;

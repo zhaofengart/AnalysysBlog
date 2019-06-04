@@ -65,8 +65,7 @@ public class UserServiceImpl implements UserService {
         USERNAME_OR_PASSWORD_CAN_NOT_BE_NULL("用户名或密码不能为空"),
         USERNAME_ALREADY_EXISTS("用户名已存在"),
         USERNAME_OR_PASSWORD_ERROR("登陆失败，用户名、密码信息不正确。"),
-        UPDATE_FAILURE("更新失败"),
-        UPDATE_SUCCESS("更新成功");
+        UPDATE_FAILURE("更新失败");
 
         private String userResult;
 

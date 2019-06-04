@@ -1,9 +1,8 @@
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
-  config-location: classpath:/mybatis/config/mybatis-config.xml
-#  type-aliases-package: com.analysys.blog.entity
-#  configuration:
-#    map-underscore-to-camel-case: true
+  type-aliases-package: com.analysys.blog.entity
+  configuration:
+    map-underscore-to-camel-case: true
 
 spring:
   datasource:

@@ -49,7 +49,7 @@ public class ArticleServiceImpl implements ArticleService {
         article.setUserId(articleParam.getUserId());
         article.setSummary(articleParam.getSummary());
 
-        getUrlOfFirstImage(articleParam, article);
+        setUrlOfFirstImage(articleParam, article);
 
         articleMapper.insert(article);
 
@@ -58,7 +58,7 @@ public class ArticleServiceImpl implements ArticleService {
         return new JsonResult();
     }
 
-    private void getUrlOfFirstImage(ArticleParam articleParam, Article article) {
+    private void setUrlOfFirstImage(ArticleParam articleParam, Article article) {
         // 获取第一张图片url
         String content = articleParam.getContent();
         System.out.println(content);
@@ -88,7 +88,6 @@ public class ArticleServiceImpl implements ArticleService {
         // 新增标签
         List<String> newTagList = articleParam.getNewTagList();
         if (newTagList != null) {
-            System.out.println("标签添加");
             Tag tag = new Tag();
             for(String item: newTagList) {
                 System.out.println("标签内容" + item);
@@ -100,7 +99,6 @@ public class ArticleServiceImpl implements ArticleService {
         }
 
 
-
         // 添加文章标签记录
         ArticleTagKey articleTagKey = new ArticleTagKey();
         articleTagKey.setArticleId(articleId);
@@ -108,6 +106,7 @@ public class ArticleServiceImpl implements ArticleService {
         for (Integer tagId: tagIdList) {
             articleTagKey.setTagId(tagId);
             articleTagMapper.insert(articleTagKey);
+            tagMapper.addOneToCallNumByTagId(tagId);
         }
     }
 
@@ -121,9 +120,8 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public JsonResult getNewestArticle() {
-            List<ArticlePojo> articlePojoList = articleMapper.selectNewestArticleWithLimitNum(DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
-
-            return new JsonResult<>(articlePojoList);
+        List<ArticlePojo> articlePojoList = articleMapper.selectNewestArticleWithLimitNum(DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
+        return new JsonResult<>(articlePojoList);
     }
 
 
@@ -134,8 +132,6 @@ public class ArticleServiceImpl implements ArticleService {
         if (articlePojoList.isEmpty()) {
             return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
-
-        tagMapper.addOneToCallNumByTagId(tagId);
 
         return new JsonResult(articlePojoList);
     }

@@ -19,8 +19,6 @@ import java.util.Random;
 
 public class FileUtil {
 
-
-
     public static WangEditor upload(MultipartFile multipartFile, HttpServletRequest request){
 
         try{
@@ -42,7 +40,7 @@ public class FileUtil {
 
             System.out.println(url);
 
-            String data[] = {url};
+            String[] data = {url};
             return new WangEditor(data);
 //            return ReturnData.buildSuccessResult(url);
         } catch (IOException e) {

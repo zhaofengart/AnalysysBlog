@@ -61,7 +61,7 @@ public class FileHandleUtil {
             String url = request.getScheme() + "://" + request.getServerName()
                     + ":" + request.getServerPort() + resultPath;
 
-            String result[] = {url};
+            String[] result = {url};
             return new WangEditor(result);
         } catch (IOException e) {
             e.printStackTrace();

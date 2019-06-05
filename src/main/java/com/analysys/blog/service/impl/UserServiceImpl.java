@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
     public JsonResult login(String username, String password) {
         User user = userMapper.select(username, password);
         if (user == null) {
-            return new JsonResult(RtCode.BadRequest, UserResult.USERNAME_OR_PASSWORD_ERROR.toString());
+            return new JsonResult(RtCode.BAD_REQUEST, UserResult.USERNAME_OR_PASSWORD_ERROR.toString());
         }
 
         return new JsonResult(user);
@@ -33,13 +33,13 @@ public class UserServiceImpl implements UserService {
     @Override
     public JsonResult register(User user) {
         if (user.getUsername() == null || user.getPassword() == null){
-            return new JsonResult(RtCode.BadRequest, UserResult.USERNAME_OR_PASSWORD_CAN_NOT_BE_NULL.toString());
+            return new JsonResult(RtCode.BAD_REQUEST, UserResult.USERNAME_OR_PASSWORD_CAN_NOT_BE_NULL.toString());
         }
         System.out.println("进入注册");
 
         User userResult = userMapper.selectUserByUsername(user.getUsername());
         if (userResult != null) {
-            return new JsonResult(RtCode.BadRequest, UserResult.USERNAME_ALREADY_EXISTS.toString());
+            return new JsonResult(RtCode.BAD_REQUEST, UserResult.USERNAME_ALREADY_EXISTS.toString());
         }
 
         userMapper.insert(user);

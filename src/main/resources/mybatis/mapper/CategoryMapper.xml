@@ -95,4 +95,9 @@
     set category_name = #{categoryName,jdbcType=VARCHAR}
     where category_id = #{categoryId,jdbcType=INTEGER}
   </update>
+
+  <!-- 获取所有类别 -->
+  <select id="selectAllCategory" resultMap="BaseResultMap">
+    select category_id, category_name from category
+  </select>
 </mapper>

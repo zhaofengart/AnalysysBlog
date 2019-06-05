@@ -315,9 +315,10 @@
     <if test="categoryId != null">
       and a.category_id = #{categoryId}
     </if>
-    and issue_time >
+    and issue_time >=
     (select issue_time from article where article_id=#{articleId})
-    order by issue_time asc
+    and a.article_id > #{articleId}
+    order by issue_time asc, a.article_id asc
     limit 1
   </select>
 
@@ -333,9 +334,10 @@
     <if test="categoryId != null">
       and a.category_id = #{categoryId}
     </if>
-    and issue_time  &lt;
+    and issue_time  &lt;=
     (select issue_time from article where article_id=#{articleId})
-    order by issue_time desc
+    and a.article_id &lt; #{articleId}
+    order by issue_time desc, a.article_id desc
     limit 1
   </select>
 

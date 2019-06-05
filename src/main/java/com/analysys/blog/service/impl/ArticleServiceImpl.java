@@ -130,7 +130,7 @@ public class ArticleServiceImpl implements ArticleService {
         List<ArticlePojo> articlePojoList = articleMapper.selectArtilceByTagIdWithStartIndexAndLimitNum(
                 tagId, (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE );
         if (articlePojoList.isEmpty()) {
-            return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.BAD_REQUEST, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         return new JsonResult(articlePojoList);
@@ -141,7 +141,7 @@ public class ArticleServiceImpl implements ArticleService {
         List<ArticlePojo> articlePojoList =  articleMapper.selectArtilceWithStartIndexAndLimitNum(
                 (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
         if (articlePojoList.isEmpty()) {
-            return new JsonResult<>(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult<>(RtCode.BAD_REQUEST, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         return new JsonResult<>(articlePojoList);
@@ -156,12 +156,12 @@ public class ArticleServiceImpl implements ArticleService {
         SimpleArticlePojo next = articleMapper.selectNextArticle(tagId, categoryId, articleId);
 
         if (article == null) {
-            return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.BAD_REQUEST, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         articleMapper.addOneToScanNumByArticleId(articleId);
 
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>(4);
         map.put("article", article);
         map.put("previous", previous);
         map.put("next", next);
@@ -174,7 +174,7 @@ public class ArticleServiceImpl implements ArticleService {
     public JsonResult getPopularArticle() {
         List<SimpleArticlePojo> articlePojoList = articleMapper.selectPopularArticleWithLimitNum(DEFAULT_FETCH_NUM_OF_POPULAR_ARTICLE);
         if (articlePojoList.isEmpty()) {
-            return new JsonResult(RtCode.DBERROR, ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.DB_ERROR, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         return new JsonResult<>(articlePojoList);
@@ -191,7 +191,7 @@ public class ArticleServiceImpl implements ArticleService {
                 articleMapper.selectArtilceByCategoryIdWithStartIndexAndLimitNum(categoryId,
                 (pageNo - 1) * DEFAULT_NUM_OF_ARTICLE_PER_PAGE, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
         if (articlePojoList.isEmpty()) {
-            return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.BAD_REQUEST, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         return new JsonResult(articlePojoList);
@@ -202,7 +202,7 @@ public class ArticleServiceImpl implements ArticleService {
     public JsonResult getNewestArticleByTagId(Integer tagId) {
         List<ArticlePojo> articlePojoList = articleMapper.selectArtilceByTagIdWithStartIndexAndLimitNum(tagId, 0, DEFAULT_NUM_OF_ARTICLE_PER_PAGE);
         if (articlePojoList.isEmpty()) {
-            return new JsonResult(RtCode.BadRequest, ArticleResult.NO_MATCHING_ARTICLE.toString());
+            return new JsonResult(RtCode.BAD_REQUEST, ArticleResult.NO_MATCHING_ARTICLE.toString());
         }
 
         tagMapper.addOneToCallNumByTagId(tagId);

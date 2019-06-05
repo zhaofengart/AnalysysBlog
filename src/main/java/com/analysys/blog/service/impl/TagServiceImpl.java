@@ -28,7 +28,7 @@ public class TagServiceImpl implements TagService {
 
         Tag tag = tagMapper.selectByPrimaryKey(tagId);
         if (tag == null) {
-            return new JsonResult(RtCode.BadRequest, "参数错误");
+            return new JsonResult(RtCode.BAD_REQUEST, "参数错误");
         }
 
         return new JsonResult(tag);
@@ -39,7 +39,7 @@ public class TagServiceImpl implements TagService {
         List<Tag> tagList = tagMapper.selectPopularTagWithLimitNum(DEFAULT_FETCH_NUM_OF_POPULAR_TAG);
 
         if (tagList == null || tagList.isEmpty()) {
-            return new JsonResult<>(RtCode.DBERROR, "数据库错误");
+            return new JsonResult<>(RtCode.DB_ERROR, "数据库错误");
         }
 
         return new JsonResult<>(tagList);

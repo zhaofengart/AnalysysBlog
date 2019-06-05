@@ -9,8 +9,10 @@ import java.util.Arrays;
 
 public class WangEditor {
 
-    private Integer errno; //错误代码，0 表示没有错误。
-    private String[] data; //已上传的图片路径
+    //错误代码，0 表示没有错误。
+    private Integer errno;
+    //已上传的图片路径
+    private String[] data;
 
     public WangEditor() {
         super();

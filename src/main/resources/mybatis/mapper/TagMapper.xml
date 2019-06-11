@@ -127,9 +127,10 @@
     <include refid="Base_Column_List"/>
     from tag
     order by call_num desc
-    limit #{limitNum}
+    <if test="limitNum != null">
+      limit #{limitNum}
+    </if>
   </select>
-
 
   <!-- 增加标签点击数 -->
   <update id="addOneToCallNumByTagId">

@@ -27,6 +27,8 @@ public interface TagService {
     JsonResult getPopularTag();
 
 
+    JsonResult getAllTag();
+
     /**
      * 添加标签
      *

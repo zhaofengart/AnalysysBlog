@@ -46,6 +46,17 @@ public class TagServiceImpl implements TagService {
     }
 
     @Override
+    public JsonResult getAllTag() {
+        List<Tag> tagList = tagMapper.selectPopularTagWithLimitNum(null);
+
+        if (tagList == null || tagList.isEmpty()) {
+            return new JsonResult<>(RtCode.DB_ERROR, "数据库错误");
+        }
+
+        return new JsonResult<>(tagList);
+    }
+
+    @Override
     public JsonResult addTag(String tagName) {
         Tag tag = new Tag();
         tag.setTagName(tagName);

@@ -1,6 +1,7 @@
 package com.analysys.blog.repository;
 
 import com.analysys.blog.entity.Tag;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -69,7 +70,7 @@ public interface TagMapper {
      * @param
      * @return
      */
-    List<Tag> selectPopularTagWithLimitNum(Integer defaultFetchNumOfPopularTag);
+    List<Tag> selectPopularTagWithLimitNum(@Param("limitNum") Integer limitNum);
     
     
     /**

@@ -23,8 +23,8 @@ public class TagController extends BaseController {
     private TagService tagService;
 
     // 根据标签id显示最新文章
-    @RequestMapping("/{tagId}")
-    public JsonResult getNewestArticleByTagId(@PathVariable("tagId") Integer tagId){
+    @PostMapping("/")
+    public JsonResult getNewestArticleByTagId(Integer tagId){
         return articleService.getNewestArticleByTagId(tagId);
     }
 
@@ -46,6 +46,10 @@ public class TagController extends BaseController {
         return tagService.getPopularTag();
     }
 
+    @PostMapping("/getAllTag")
+    public JsonResult getAllTag() {
+        return tagService.getAllTag();
+    }
 
     @PostMapping("/addTag")
     public JsonResult addTag(String tagName){

@@ -78,6 +78,8 @@ public class ArticleController extends BaseController {
 
     @RequestMapping("/getTotalNumOfArticle")
     public JsonResult getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId) {
+        System.out.println(categoryId);
+        System.out.println(tagId);
         return articleService.getTotalNumOfArticleByCategoryIdOrTagId(categoryId, tagId);
     }
 }

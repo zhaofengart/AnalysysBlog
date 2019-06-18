@@ -14,9 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/5/25
  */
 
-@CrossOrigin
 @RestController
-@RequestMapping("/blog/category")
+@RequestMapping("/api/blog/category")
 public class CategoryController extends BaseController {
 
     @Autowired

@@ -11,9 +11,8 @@ import org.springframework.web.bind.annotation.*;
  * @date 2019/5/24
  */
 
-@CrossOrigin
 @RestController
-@RequestMapping("/blog/tag")
+@RequestMapping("/api/blog/tag")
 public class TagController extends BaseController {
 
     @Autowired

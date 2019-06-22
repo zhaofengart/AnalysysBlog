@@ -3,6 +3,7 @@ package com.analysys.blog.controller;
 import com.analysys.blog.common.JsonResult;
 import com.analysys.blog.entity.User;
 import com.analysys.blog.service.UserService;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,7 +26,7 @@ public class UserController extends BaseController {
     private UserService userService;
 
     @PostMapping("/login")
-    public JsonResult login(String username, String password){
+    public JsonResult login(@ApiParam("用户名") String username, @ApiParam("密码") String password){
         System.out.println(username+password);
         return userService.login(username, password);
     }
@@ -36,7 +37,7 @@ public class UserController extends BaseController {
     }
 
     @PostMapping("/updatePassword")
-    public JsonResult updatePassword(Integer userId, String oldPassword, String newPassword){
+    public JsonResult updatePassword(@ApiParam("用户id") Integer userId, @ApiParam("旧密码") String oldPassword, @ApiParam("新密码") String newPassword){
         return userService.updatePassword(userId, oldPassword, newPassword);
     }
 

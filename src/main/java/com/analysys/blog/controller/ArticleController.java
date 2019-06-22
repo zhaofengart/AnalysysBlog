@@ -49,8 +49,8 @@ public class ArticleController extends BaseController {
 
 
     // 富文本上传
-    @RequestMapping("/uploadMutilPartFile")
-    public WangEditor uploadMutilPartFile(@RequestParam("myFile") MultipartFile multipartFile,
+    @RequestMapping("/uploadMultiPartFile")
+    public WangEditor uploadMultiPartFile(@RequestParam("myFile") MultipartFile multipartFile,
                                           HttpServletRequest request) throws IOException {
         return FileHandleUtil.upload(multipartFile,request);
     }

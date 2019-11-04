@@ -27,6 +27,8 @@ public class CategoryController extends BaseController {
     // 根据类别id获取文章
     @RequestMapping("/")
     public JsonResult getArticleByCategoryIdAndPageNo(Integer categoryId, Integer pageNo){
+        System.out.println(categoryId);
+        System.out.println(pageNo);
         return articleService.getArticleByCategoryIdAndPageNo(categoryId, pageNo);
     }
 

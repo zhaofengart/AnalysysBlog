@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
  * @date 2019/5/23
  */
 
-
+@CrossOrigin
 @RestController
 @RequestMapping("/api/blog/user")
 public class UserController extends BaseController {

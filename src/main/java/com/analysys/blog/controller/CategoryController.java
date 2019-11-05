@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author zhaofeng
  * @date 2019/5/25
  */
-
+@CrossOrigin
 @RestController
 @RequestMapping("/api/blog/category")
 public class CategoryController extends BaseController {

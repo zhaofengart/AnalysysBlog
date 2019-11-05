@@ -9,8 +9,8 @@ mybatis:
 spring:
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://localhost:3306/yiguan?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    password: YiGuanXYZ.@()85258638
+    url: jdbc:mysql://118.25.133.235:3306/yiguan?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 #  # 静态资源路径

@@ -18,6 +18,7 @@ import java.io.IOException;
  * @date 2019/5/24
  */
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/blog")
 public class ArticleController extends BaseController {

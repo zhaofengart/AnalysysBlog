@@ -150,6 +150,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public JsonResult getArticle(Integer tagId, Integer categoryId, Integer articleId) {
+        System.out.println(articleId);
         ArticlePojo article = articleMapper.selectByArticleId(articleId);
         SimpleArticlePojo previous = articleMapper.selectPreviousArticle(tagId, categoryId, articleId);
         SimpleArticlePojo next = articleMapper.selectNextArticle(tagId, categoryId, articleId);

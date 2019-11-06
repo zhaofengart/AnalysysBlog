@@ -378,7 +378,7 @@
       </foreach>
     </if>
     order by scan_num desc, issue_time desc
-    limit 6
+    limit 7
     ) t
 
   </select>

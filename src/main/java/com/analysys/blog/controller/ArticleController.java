@@ -64,7 +64,7 @@ public class ArticleController extends BaseController {
     }
 
 
-    @PostMapping("/getPopularArticle")
+    @RequestMapping("/getPopularArticle")
     public JsonResult getPopularArticle(){
         return articleService.getPopularArticle();
     }

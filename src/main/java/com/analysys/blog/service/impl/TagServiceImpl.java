@@ -8,6 +8,7 @@ import com.analysys.blog.service.TagService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -41,6 +42,29 @@ public class TagServiceImpl implements TagService {
         if (tagList == null || tagList.isEmpty()) {
             return new JsonResult<>(RtCode.DB_ERROR, "数据库错误");
         }
+
+        for (int i = 0; i < tagList.size(); i++) {
+            Tag tag = tagList.get(i);
+            if (i < 5) {
+                tag.setSize("28px");
+                continue;
+            }
+            if (i < 9) {
+                tag.setSize("22px");
+                continue;
+            }
+            if (i < 17) {
+                tag.setSize("16px");
+                continue;
+            }
+            if (i < 20) {
+                tag.setSize("12px");
+                continue;
+            }
+        }
+
+        Collections.shuffle(tagList);
+
 
         return new JsonResult<>(tagList);
     }

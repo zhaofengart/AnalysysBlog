@@ -67,3 +67,212 @@
 2019-11-05 15:46:41.415  INFO 12948 --- [http-nio-8093-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2019-11-05 15:46:42.138  INFO 12948 --- [http-nio-8093-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2019-11-05 16:57:48.897  WARN 12948 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m6s504ms362µs).
+2019-11-06 09:36:55.841  INFO 21360 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 21360 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 09:36:55.845  INFO 21360 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 09:36:58.721  INFO 21360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$857e6b96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 09:37:00.786  INFO 21360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 09:37:00.880  INFO 21360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 09:37:00.880  INFO 21360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 09:37:01.085  INFO 21360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 09:37:01.085  INFO 21360 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5175 ms
+2019-11-06 09:37:02.892  INFO 21360 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 09:37:03.176  INFO 21360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 09:37:04.614  INFO 21360 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 09:37:04.669  INFO 21360 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 09:37:04.727  INFO 21360 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 09:37:05.255  INFO 21360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 09:37:05.259  INFO 21360 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 10.019 seconds (JVM running for 10.685)
+2019-11-06 09:37:13.432  INFO 21360 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 09:37:13.441  INFO 21360 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 09:37:13.442  INFO 21360 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 09:37:13.456  INFO 21360 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 09:37:13.518  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 09:37:13.518  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:37:13.518  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:13.518  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:13.521  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 09:37:13.521  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:37:13.584  INFO 21360 --- [http-nio-8093-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 09:37:13.685  INFO 21360 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/
+2019-11-06 09:37:13.685  INFO 21360 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:13.685  INFO 21360 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
+2019-11-06 09:37:13.695  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:37:13.697  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:13.697  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:37:13.721  INFO 21360 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:37:13.722  INFO 21360 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:13.722  INFO 21360 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:37:14.305  INFO 21360 --- [http-nio-8093-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 09:37:16.581  INFO 21360 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:37:16.581  INFO 21360 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:37:16.582  INFO 21360 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:16.582  INFO 21360 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:16.582  INFO 21360 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:37:16.582  INFO 21360 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:37:17.929  INFO 21360 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:37:17.929  INFO 21360 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:17.929  INFO 21360 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:37:17.929  INFO 21360 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:37:17.929  INFO 21360 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:17.929  INFO 21360 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:37:18.240  INFO 21360 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getArticle
+2019-11-06 09:37:18.240  INFO 21360 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:18.240  INFO 21360 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByArticleId
+2019-11-06 09:37:18.622  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 09:37:18.623  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:18.623  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:37:18.928  INFO 21360 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:18.929  INFO 21360 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:37:19.561  INFO 21360 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/
+2019-11-06 09:37:19.561  INFO 21360 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:19.561  INFO 21360 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByCategoryIdAndPageNo
+2019-11-06 09:37:19.867  INFO 21360 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:37:19.867  INFO 21360 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:19.867  INFO 21360 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:37:20.636  INFO 21360 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:37:20.636  INFO 21360 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:37:20.637  INFO 21360 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:20.637  INFO 21360 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:37:20.637  INFO 21360 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:20.637  INFO 21360 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:37:21.881  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:37:21.882  INFO 21360 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:37:21.882  INFO 21360 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:21.882  INFO 21360 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:37:21.882  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:21.884  INFO 21360 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:37:21.893  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getArticle
+2019-11-06 09:37:21.893  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:21.893  INFO 21360 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByArticleId
+2019-11-06 09:37:22.925  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getArticle
+2019-11-06 09:37:22.926  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:37:22.926  INFO 21360 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByArticleId
+2019-11-06 09:39:16.682  INFO 21320 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 21320 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 09:39:16.687  INFO 21320 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 09:39:19.179  INFO 21320 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67503adf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 09:39:21.035  INFO 21320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 09:39:21.140  INFO 21320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 09:39:21.140  INFO 21320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 09:39:21.482  INFO 21320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 09:39:21.482  INFO 21320 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4705 ms
+2019-11-06 09:39:23.740  INFO 21320 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 09:39:24.031  INFO 21320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 09:39:24.455  INFO 21320 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 09:39:24.503  INFO 21320 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 09:39:24.563  INFO 21320 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 09:39:25.256  INFO 21320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 09:39:25.264  INFO 21320 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 9.195 seconds (JVM running for 9.974)
+2019-11-06 09:39:29.737  INFO 21320 --- [http-nio-8093-exec-3] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 09:39:29.750  INFO 21320 --- [http-nio-8093-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 09:39:29.750  INFO 21320 --- [http-nio-8093-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 09:39:29.771  INFO 21320 --- [http-nio-8093-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2019-11-06 09:39:29.865  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:39:29.865  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:39:29.866  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:39:29.866  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:39:29.881  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:39:29.881  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:39:29.972  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getArticle
+2019-11-06 09:39:29.972  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:39:29.972  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByArticleId
+2019-11-06 09:39:29.983  INFO 21320 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 09:39:30.869  INFO 21320 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 09:40:19.214  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getAllTag
+2019-11-06 09:40:19.214  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 09:40:19.215  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:40:19.215  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:40:19.215  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 09:40:19.215  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllTag
+2019-11-06 09:41:35.087  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/publishArticle
+2019-11-06 09:41:35.087  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:41:35.088  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：publishArticle
+2019-11-06 09:41:35.280  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/publishArticle
+2019-11-06 09:41:35.281  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:41:35.281  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 09:42:08.678  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/publishArticle
+2019-11-06 09:42:08.678  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:42:08.678  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : 拦截方法：publishArticle
+2019-11-06 09:42:14.404  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 09:42:14.405  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:42:14.405  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 09:42:14.715  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:42:14.715  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:42:14.715  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:42:14.715  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:42:14.715  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:42:14.715  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:42:14.726  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/
+2019-11-06 09:42:14.726  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:42:14.727  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:42:14.727  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
+2019-11-06 09:42:14.727  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:42:14.727  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:43:39.668  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 09:43:39.668  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:43:39.668  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 09:43:39.676  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:43:39.676  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:43:39.676  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:43:39.986  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:43:39.986  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:43:39.986  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:43:39.987  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/
+2019-11-06 09:43:39.987  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:43:39.988  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:43:39.988  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:43:39.988  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:43:39.988  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
+2019-11-06 09:44:57.827  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 09:44:57.827  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:44:57.827  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 09:44:57.837  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:44:57.838  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:44:57.838  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:44:58.165  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:44:58.165  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/
+2019-11-06 09:44:58.166  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:44:58.166  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:44:58.166  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:44:58.166  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
+2019-11-06 09:44:58.169  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:44:58.170  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:44:58.170  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:45:19.067  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 09:45:19.068  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getAllTag
+2019-11-06 09:45:19.068  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:19.069  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:19.069  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 09:45:19.069  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllTag
+2019-11-06 09:45:36.502  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/uploadMultiPartFile
+2019-11-06 09:45:36.503  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:36.503  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：uploadMultiPartFile
+2019-11-06 09:45:41.292  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/publishArticle
+2019-11-06 09:45:41.293  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:41.293  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：publishArticle
+2019-11-06 09:45:44.755  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 09:45:44.756  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:44.757  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 09:45:45.060  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 09:45:45.061  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:45.061  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 09:45:45.068  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 09:45:45.068  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:45.068  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 09:45:45.085  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/
+2019-11-06 09:45:45.087  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:45.085  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:45:45.088  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
+2019-11-06 09:45:45.088  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:45:45.088  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId

@@ -40,12 +40,12 @@ public class TagController extends BaseController {
         return tagService.getTagByTagId(tagId);
     }
 
-    @PostMapping("/getPopularTag")
+    @RequestMapping("/getPopularTag")
     public JsonResult getPopularTag() {
         return tagService.getPopularTag();
     }
 
-    @PostMapping("/getAllTag")
+    @RequestMapping("/getAllTag")
     public JsonResult getAllTag() {
         return tagService.getAllTag();
     }

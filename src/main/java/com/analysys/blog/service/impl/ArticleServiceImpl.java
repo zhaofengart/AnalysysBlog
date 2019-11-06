@@ -15,9 +15,8 @@ import com.analysys.blog.service.ArticleService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.lang.reflect.InvocationTargetException;
+import java.util.*;
 
 /**
  * @author zhaofeng
@@ -217,6 +216,31 @@ public class ArticleServiceImpl implements ArticleService {
         return new JsonResult(totalNumOfArticle);
     }
 
+    @Override
+    public JsonResult getRelatedRecommendationArticles(Integer articleId) {
+        List<Tag> tagList = tagMapper.selectTagByArticleId(articleId);
+
+        List<Integer> tagIdList = new ArrayList<>();
+        tagList.forEach((tag) -> {
+            tagIdList.add(tag.getTagId());
+        });
+
+        List<SimpleArticlePojo> articlePojoList = articleMapper.selectRelatedArticleByTagIdList(tagIdList);
+        for (int i = 0; i < articlePojoList.size(); i++) {
+            SimpleArticlePojo item = articlePojoList.get(i);
+            if (item.getArticleId().equals(articleId)) {
+                articlePojoList.remove(item);
+                break;
+            }
+        }
+        articlePojoList.forEach(System.out::println);
+
+        if (articlePojoList.isEmpty()) {
+            return new JsonResult(RtCode.DB_ERROR, ArticleResult.NO_MATCHING_ARTICLE.toString());
+        }
+
+        return new JsonResult<>(articlePojoList);
+    }
 
 
     enum ArticleResult {

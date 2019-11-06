@@ -362,6 +362,27 @@
 
   </select>
 
+  <!-- 相关推荐文章-->
+  <select id="selectRelatedArticleByTagIdList" parameterType="java.util.List" resultType="com.analysys.blog.pojo.SimpleArticlePojo">
+
+    select articleId, title
+    from
+    ( select distinct a.article_id as articleId, title, scan_num, issue_time
+    from article a left join article_tag atg
+    on atg.article_id = a.article_id
+
+    <if test="list != null">
+      where tag_id in
+      <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+        #{item}
+      </foreach>
+    </if>
+    order by scan_num desc, issue_time desc
+    limit 6
+    ) t
+
+  </select>
+
 
   <!-- 增加文章浏览量 -->
   <update id="addOneToScanNumByArticleId">

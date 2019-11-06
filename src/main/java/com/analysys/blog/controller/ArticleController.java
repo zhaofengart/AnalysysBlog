@@ -70,6 +70,12 @@ public class ArticleController extends BaseController {
     }
 
 
+    @RequestMapping("/getRelatedRecommendationArticles")
+    public JsonResult getRelatedRecommendationArticles(Integer articleId) {
+        return articleService.getRelatedRecommendationArticles(articleId);
+    }
+
+
     @PostMapping("/updateArticle")
     public JsonResult updateArticle(Article article){
         return  articleService.update(article);

@@ -101,7 +101,12 @@ public interface ArticleService {
      * @return 
      */
     JsonResult getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId);
-    
 
 
+    /**
+     *
+     *
+     * @return
+     */
+    JsonResult getRelatedRecommendationArticles(Integer articleId);
 }

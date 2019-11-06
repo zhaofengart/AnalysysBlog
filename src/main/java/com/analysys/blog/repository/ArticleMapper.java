@@ -156,4 +156,9 @@ public interface ArticleMapper {
      * @return 
      */
     Integer addOneToScanNumByArticleId(Integer articleId);
+
+    /**
+     * 根据标签获取相关文章
+     */
+    List<SimpleArticlePojo> selectRelatedArticleByTagIdList(List<Integer> list);
 }

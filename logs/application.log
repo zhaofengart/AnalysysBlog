@@ -276,3 +276,1120 @@
 2019-11-06 09:45:45.088  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
 2019-11-06 09:45:45.088  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
 2019-11-06 09:45:45.088  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:03.548  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:03.548  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/
+2019-11-06 09:49:03.549  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:03.549  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:03.549  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:03.549  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByCategoryIdAndPageNo
+2019-11-06 09:49:04.322  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/
+2019-11-06 09:49:04.323  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:04.323  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByCategoryIdAndPageNo
+2019-11-06 09:49:04.326  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:04.326  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:04.326  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:05.062  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/
+2019-11-06 09:49:05.062  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:05.063  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:05.063  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByCategoryIdAndPageNo
+2019-11-06 09:49:05.063  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:05.063  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:06.408  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/
+2019-11-06 09:49:06.408  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:06.408  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:06.408  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:06.408  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByCategoryIdAndPageNo
+2019-11-06 09:49:06.409  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:06.871  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/
+2019-11-06 09:49:06.871  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:06.871  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
+2019-11-06 09:49:06.873  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:06.873  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:06.873  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:07.871  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:07.871  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:07.871  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:07.874  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:07.875  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:07.875  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:08.435  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:08.435  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:08.435  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:08.438  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:08.438  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:08.438  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:08.813  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:08.814  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:08.814  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:08.941  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:08.941  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:08.941  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:09.134  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:09.134  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:09.134  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:09.139  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:09.140  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:09.140  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:10.029  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:10.029  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:10.029  INFO 21320 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:10.340  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:10.340  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:10.341  INFO 21320 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:10.440  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:10.440  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:10.440  INFO 21320 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:10.750  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:10.751  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:10.751  INFO 21320 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:10.838  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:10.838  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:10.838  INFO 21320 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:10.901  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:10.901  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:10.901  INFO 21320 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:11.193  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:11.193  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:11.193  INFO 21320 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:11.196  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:11.196  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:11.197  INFO 21320 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 09:49:11.505  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 09:49:11.505  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:11.505  INFO 21320 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 09:49:11.776  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 09:49:11.776  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 09:49:11.776  INFO 21320 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 10:10:24.093  INFO 10300 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 10300 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:10:24.098  INFO 10300 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:10:26.184  INFO 10300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41d65582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:10:27.622  INFO 10300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:10:27.716  INFO 10300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:10:27.716  INFO 10300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:10:27.890  INFO 10300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:10:27.891  INFO 10300 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3731 ms
+2019-11-06 10:10:28.932  INFO 10300 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:10:29.137  INFO 10300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:10:29.450  INFO 10300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:10:29.485  INFO 10300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:10:29.526  INFO 10300 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:10:29.876  INFO 10300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:10:29.880  INFO 10300 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.334 seconds (JVM running for 7.008)
+2019-11-06 10:10:47.237  INFO 10300 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:10:47.248  INFO 10300 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:10:47.248  INFO 10300 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:10:47.262  INFO 10300 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 10:10:47.304  INFO 10300 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 10:10:47.305  INFO 10300 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:10:47.307  INFO 10300 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 10:10:47.383  INFO 10300 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:10:47.869  INFO 10300 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:10:59.209  INFO 10300 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:10:59.209  INFO 10300 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:10:59.210  INFO 10300 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:10:59.274  INFO 10300 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:10:59.275  INFO 10300 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:10:59.275  INFO 10300 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:11:37.102  INFO 2700 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 2700 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:11:37.106  INFO 2700 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:11:39.301  INFO 2700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$24d7df9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:11:40.744  INFO 2700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:11:40.851  INFO 2700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:11:40.851  INFO 2700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:11:41.049  INFO 2700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:11:41.049  INFO 2700 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3889 ms
+2019-11-06 10:11:42.175  INFO 2700 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:11:42.362  INFO 2700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:11:42.691  INFO 2700 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:11:42.730  INFO 2700 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:11:42.778  INFO 2700 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:11:43.327  INFO 2700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:11:43.331  INFO 2700 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.776 seconds (JVM running for 7.398)
+2019-11-06 10:11:43.495  INFO 2700 --- [http-nio-8093-exec-3] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:11:43.507  INFO 2700 --- [http-nio-8093-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:11:43.508  INFO 2700 --- [http-nio-8093-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:11:43.520  INFO 2700 --- [http-nio-8093-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 10:11:43.578  INFO 2700 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:11:43.579  INFO 2700 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:11:43.581  INFO 2700 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:11:43.630  INFO 2700 --- [http-nio-8093-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:11:44.094  INFO 2700 --- [http-nio-8093-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:11:44.182  INFO 2700 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:11:44.183  INFO 2700 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:11:44.183  INFO 2700 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:13:39.268  INFO 5540 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 5540 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:13:39.271  INFO 5540 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:13:41.475  INFO 5540 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fdc344cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:13:42.999  INFO 5540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:13:43.085  INFO 5540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:13:43.085  INFO 5540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:13:43.280  INFO 5540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:13:43.281  INFO 5540 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3956 ms
+2019-11-06 10:13:44.357  INFO 5540 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:13:44.645  INFO 5540 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:13:44.964  INFO 5540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:13:45.002  INFO 5540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:13:45.047  INFO 5540 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:13:45.506  INFO 5540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:13:45.510  INFO 5540 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.812 seconds (JVM running for 7.502)
+2019-11-06 10:13:47.456  INFO 5540 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:13:47.468  INFO 5540 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:13:47.468  INFO 5540 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:13:47.483  INFO 5540 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-11-06 10:13:47.532  INFO 5540 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:13:47.533  INFO 5540 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:13:47.534  INFO 5540 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:13:47.568  INFO 5540 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:13:48.098  INFO 5540 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:13:48.208  INFO 5540 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:13:48.208  INFO 5540 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:13:48.208  INFO 5540 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:13:59.821  INFO 20216 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 20216 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:13:59.830  INFO 20216 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:14:02.156  INFO 20216 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ad8b554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:14:03.808  INFO 20216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:14:03.905  INFO 20216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:14:03.906  INFO 20216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:14:04.117  INFO 20216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:14:04.117  INFO 20216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4221 ms
+2019-11-06 10:14:05.395  INFO 20216 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:14:05.633  INFO 20216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:14:06.010  INFO 20216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:14:06.054  INFO 20216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:14:06.107  INFO 20216 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:14:06.588  INFO 20216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:14:06.593  INFO 20216 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 7.337 seconds (JVM running for 8.185)
+2019-11-06 10:14:23.238  INFO 20216 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:14:23.247  INFO 20216 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:14:23.248  INFO 20216 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:14:23.259  INFO 20216 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-06 10:14:23.307  INFO 20216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:14:23.307  INFO 20216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:14:23.308  INFO 20216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:14:23.346  INFO 20216 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:14:23.821  INFO 20216 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:14:23.939  INFO 20216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:14:23.939  INFO 20216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:14:23.939  INFO 20216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:15:28.428  INFO 19004 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 19004 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:15:28.432  INFO 19004 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:15:30.347  INFO 19004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7ea45fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:15:31.699  INFO 19004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:15:31.784  INFO 19004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:15:31.784  INFO 19004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:15:31.966  INFO 19004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:15:31.966  INFO 19004 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3463 ms
+2019-11-06 10:15:33.006  INFO 19004 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:15:33.214  INFO 19004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:15:33.519  INFO 19004 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:15:33.557  INFO 19004 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:15:33.602  INFO 19004 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:15:33.961  INFO 19004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:15:33.965  INFO 19004 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.068 seconds (JVM running for 6.685)
+2019-11-06 10:15:39.847  INFO 19004 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:15:39.856  INFO 19004 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:15:39.857  INFO 19004 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:15:39.871  INFO 19004 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 10:15:39.921  INFO 19004 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:15:39.922  INFO 19004 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:15:39.924  INFO 19004 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:15:39.960  INFO 19004 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:15:40.473  INFO 19004 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:15:40.667  INFO 19004 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:15:40.667  INFO 19004 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:15:40.667  INFO 19004 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:16:42.737  INFO 22964 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 22964 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:16:42.740  INFO 22964 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:16:44.899  INFO 22964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f03c689f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:16:46.364  INFO 22964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:16:46.449  INFO 22964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:16:46.449  INFO 22964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:16:46.646  INFO 22964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:16:46.646  INFO 22964 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3845 ms
+2019-11-06 10:16:47.674  INFO 22964 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:16:47.879  INFO 22964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:16:48.217  INFO 22964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:16:48.254  INFO 22964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:16:48.307  INFO 22964 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:16:48.653  INFO 22964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:16:48.657  INFO 22964 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.427 seconds (JVM running for 7.072)
+2019-11-06 10:17:04.402  INFO 22964 --- [http-nio-8093-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:17:04.410  INFO 22964 --- [http-nio-8093-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:17:04.411  INFO 22964 --- [http-nio-8093-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:17:04.423  INFO 22964 --- [http-nio-8093-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 10:17:04.466  INFO 22964 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:17:04.466  INFO 22964 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:17:04.468  INFO 22964 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:17:04.500  INFO 22964 --- [http-nio-8093-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:17:04.942  INFO 22964 --- [http-nio-8093-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:17:05.119  INFO 22964 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:17:05.120  INFO 22964 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:17:05.120  INFO 22964 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:17:57.924  INFO 14720 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 14720 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:17:57.927  INFO 14720 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:18:00.013  INFO 14720 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$afa5529a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:18:01.379  INFO 14720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:18:01.466  INFO 14720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:18:01.466  INFO 14720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:18:01.660  INFO 14720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:18:01.660  INFO 14720 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3667 ms
+2019-11-06 10:18:02.681  INFO 14720 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:18:02.879  INFO 14720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:18:03.201  INFO 14720 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:18:03.231  INFO 14720 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:18:03.272  INFO 14720 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:18:03.792  INFO 14720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:18:03.798  INFO 14720 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.354 seconds (JVM running for 6.988)
+2019-11-06 10:18:05.622  INFO 14720 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:18:05.635  INFO 14720 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:18:05.635  INFO 14720 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:18:05.647  INFO 14720 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 10:18:05.691  INFO 14720 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:18:05.692  INFO 14720 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:18:05.694  INFO 14720 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:18:05.731  INFO 14720 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:18:06.193  INFO 14720 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:18:06.373  INFO 14720 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:18:06.374  INFO 14720 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:18:06.374  INFO 14720 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:18:29.176  INFO 23516 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 23516 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:18:29.179  INFO 23516 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:18:31.236  INFO 23516 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fdc344cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:18:32.698  INFO 23516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:18:32.787  INFO 23516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:18:32.787  INFO 23516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:18:32.983  INFO 23516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:18:32.984  INFO 23516 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3726 ms
+2019-11-06 10:18:33.969  INFO 23516 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:18:34.150  INFO 23516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:18:34.466  INFO 23516 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:18:34.504  INFO 23516 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:18:34.551  INFO 23516 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:18:34.906  INFO 23516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:18:34.910  INFO 23516 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.433 seconds (JVM running for 7.142)
+2019-11-06 10:18:39.414  INFO 23516 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:18:39.422  INFO 23516 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:18:39.423  INFO 23516 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:18:39.436  INFO 23516 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-06 10:18:39.483  INFO 23516 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:18:39.484  INFO 23516 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:18:39.486  INFO 23516 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:18:39.521  INFO 23516 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:18:39.979  INFO 23516 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:18:40.159  INFO 23516 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:18:40.160  INFO 23516 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:18:40.160  INFO 23516 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:19:22.205  INFO 23516 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:19:22.206  INFO 23516 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:19:22.206  INFO 23516 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:19:22.299  INFO 23516 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:19:22.299  INFO 23516 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:19:22.299  INFO 23516 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:19:28.108  INFO 11248 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 11248 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:19:28.113  INFO 11248 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:19:30.278  INFO 11248 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c0067cfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:19:31.686  INFO 11248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:19:31.773  INFO 11248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:19:31.773  INFO 11248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:19:31.952  INFO 11248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:19:31.953  INFO 11248 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3779 ms
+2019-11-06 10:19:32.950  INFO 11248 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:19:33.152  INFO 11248 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:19:33.451  INFO 11248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:19:33.480  INFO 11248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:19:33.520  INFO 11248 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:19:33.919  INFO 11248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:19:33.924  INFO 11248 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.354 seconds (JVM running for 7.044)
+2019-11-06 10:19:35.825  INFO 11248 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:19:35.835  INFO 11248 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:19:35.835  INFO 11248 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:19:35.850  INFO 11248 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 10:19:35.894  INFO 11248 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:19:35.894  INFO 11248 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:19:35.896  INFO 11248 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:19:35.931  INFO 11248 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:19:36.433  INFO 11248 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:19:36.616  INFO 11248 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:19:36.616  INFO 11248 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:19:36.616  INFO 11248 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:24:05.983  INFO 19216 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 19216 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:24:05.992  INFO 19216 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:24:08.032  INFO 19216 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$948302cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:24:09.464  INFO 19216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:24:09.557  INFO 19216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:24:09.558  INFO 19216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:24:09.745  INFO 19216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:24:09.745  INFO 19216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3696 ms
+2019-11-06 10:24:11.044  INFO 19216 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:24:11.299  INFO 19216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:24:11.632  INFO 19216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:24:11.669  INFO 19216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:24:11.710  INFO 19216 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:24:12.111  INFO 19216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:24:12.114  INFO 19216 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.735 seconds (JVM running for 7.358)
+2019-11-06 10:24:12.170  INFO 19216 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:24:12.180  INFO 19216 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:24:12.180  INFO 19216 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:24:12.193  INFO 19216 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-06 10:24:12.242  INFO 19216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:24:12.242  INFO 19216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 10:24:12.244  INFO 19216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:24:12.281  INFO 19216 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:24:12.742  INFO 19216 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:24:12.928  INFO 19216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:24:12.928  INFO 19216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 10:24:12.928  INFO 19216 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:27:04.406  INFO 18344 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 18344 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:27:04.410  INFO 18344 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:27:06.400  INFO 18344 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$21092f4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:27:07.839  INFO 18344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:27:07.924  INFO 18344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:27:07.924  INFO 18344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:27:08.103  INFO 18344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:27:08.104  INFO 18344 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3643 ms
+2019-11-06 10:27:09.401  INFO 18344 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:27:09.619  INFO 18344 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:27:10.006  INFO 18344 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:27:10.051  INFO 18344 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:27:10.106  INFO 18344 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:27:10.545  INFO 18344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:27:10.549  INFO 18344 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.675 seconds (JVM running for 7.324)
+2019-11-06 10:27:10.978  INFO 18344 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:27:10.987  INFO 18344 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:27:10.988  INFO 18344 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:27:11.001  INFO 18344 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-06 10:27:11.043  INFO 18344 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:27:11.044  INFO 18344 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:27:11.046  INFO 18344 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:27:11.098  INFO 18344 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:27:11.578  INFO 18344 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:27:11.763  INFO 18344 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:27:11.763  INFO 18344 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:27:11.763  INFO 18344 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:28:55.935  INFO 20796 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 20796 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:28:55.939  INFO 20796 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:28:58.557  INFO 20796 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d69b7b02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:29:00.440  INFO 20796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:29:00.552  INFO 20796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:29:00.552  INFO 20796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:29:00.815  INFO 20796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:29:00.815  INFO 20796 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4803 ms
+2019-11-06 10:29:02.343  INFO 20796 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:29:02.676  INFO 20796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:29:03.175  INFO 20796 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:29:03.220  INFO 20796 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:29:03.280  INFO 20796 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:29:03.907  INFO 20796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:29:03.915  INFO 20796 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 8.595 seconds (JVM running for 9.29)
+2019-11-06 10:29:04.005  INFO 20796 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:29:04.042  INFO 20796 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:29:04.042  INFO 20796 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:29:04.060  INFO 20796 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-11-06 10:29:04.127  INFO 20796 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:29:04.128  INFO 20796 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:29:04.129  INFO 20796 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:29:04.182  INFO 20796 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:29:04.762  INFO 20796 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:29:04.979  INFO 20796 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:29:04.980  INFO 20796 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:29:04.980  INFO 20796 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:29:05.379  INFO 20796 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:29:05.380  INFO 20796 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:29:05.380  INFO 20796 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:29:05.431  INFO 20796 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:29:05.431  INFO 20796 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:29:05.431  INFO 20796 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:29:43.715  INFO 12700 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 12700 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:29:43.718  INFO 12700 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:29:45.665  INFO 12700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec434066] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:29:47.033  INFO 12700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:29:47.118  INFO 12700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:29:47.119  INFO 12700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:29:47.322  INFO 12700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:29:47.322  INFO 12700 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3556 ms
+2019-11-06 10:29:48.335  INFO 12700 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:29:48.591  INFO 12700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:29:48.942  INFO 12700 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:29:48.985  INFO 12700 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:29:49.037  INFO 12700 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:29:49.492  INFO 12700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:29:49.496  INFO 12700 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.293 seconds (JVM running for 6.95)
+2019-11-06 10:29:50.050  INFO 12700 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:29:50.058  INFO 12700 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:29:50.058  INFO 12700 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:29:50.071  INFO 12700 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 10:29:50.113  INFO 12700 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:29:50.113  INFO 12700 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:29:50.115  INFO 12700 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:29:50.154  INFO 12700 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:29:50.636  INFO 12700 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:29:50.841  INFO 12700 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:29:50.842  INFO 12700 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:29:50.842  INFO 12700 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:30:17.581  INFO 23132 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 23132 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:30:17.585  INFO 23132 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:30:19.545  INFO 23132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6696346f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:30:21.127  INFO 23132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:30:21.220  INFO 23132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:30:21.220  INFO 23132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:30:21.407  INFO 23132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:30:21.407  INFO 23132 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3762 ms
+2019-11-06 10:30:22.468  INFO 23132 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:30:22.688  INFO 23132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:30:23.009  INFO 23132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:30:23.054  INFO 23132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:30:23.095  INFO 23132 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:30:23.462  INFO 23132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:30:23.466  INFO 23132 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.386 seconds (JVM running for 7.089)
+2019-11-06 10:30:25.905  INFO 23132 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:30:25.913  INFO 23132 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:30:25.914  INFO 23132 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:30:25.924  INFO 23132 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-11-06 10:30:25.963  INFO 23132 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:30:25.963  INFO 23132 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:30:25.964  INFO 23132 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:30:25.994  INFO 23132 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:30:26.430  INFO 23132 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:30:26.640  INFO 23132 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:30:26.640  INFO 23132 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:30:26.640  INFO 23132 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:32:05.188  INFO 19560 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 19560 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:32:05.191  INFO 19560 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:32:07.638  INFO 19560 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$39f4de4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:32:09.060  INFO 19560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:32:09.148  INFO 19560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:32:09.148  INFO 19560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:32:09.329  INFO 19560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:32:09.330  INFO 19560 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4075 ms
+2019-11-06 10:32:10.486  INFO 19560 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:32:10.676  INFO 19560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:32:10.966  INFO 19560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:32:10.996  INFO 19560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:32:11.032  INFO 19560 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:32:11.398  INFO 19560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:32:11.402  INFO 19560 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.731 seconds (JVM running for 7.387)
+2019-11-06 10:32:13.855  INFO 19560 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:32:13.866  INFO 19560 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:32:13.866  INFO 19560 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:32:13.881  INFO 19560 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-11-06 10:32:13.925  INFO 19560 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:32:13.925  INFO 19560 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:32:13.927  INFO 19560 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:32:13.973  INFO 19560 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:32:14.431  INFO 19560 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:32:14.623  INFO 19560 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:32:14.623  INFO 19560 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:32:14.623  INFO 19560 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:32:28.810  INFO 3776 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 3776 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:32:28.813  INFO 3776 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:32:30.726  INFO 3776 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5fe7b991] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:32:32.317  INFO 3776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:32:32.415  INFO 3776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:32:32.416  INFO 3776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:32:32.610  INFO 3776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:32:32.611  INFO 3776 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3734 ms
+2019-11-06 10:32:33.833  INFO 3776 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:32:34.082  INFO 3776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:32:34.799  INFO 3776 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:32:34.910  INFO 3776 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:32:35.010  INFO 3776 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:32:35.644  INFO 3776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:32:35.650  INFO 3776 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 7.388 seconds (JVM running for 8.057)
+2019-11-06 10:32:40.172  INFO 3776 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:32:40.181  INFO 3776 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:32:40.181  INFO 3776 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:32:40.195  INFO 3776 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 10:32:40.244  INFO 3776 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:32:40.245  INFO 3776 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:32:40.247  INFO 3776 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:32:40.295  INFO 3776 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:32:40.747  INFO 3776 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:32:40.914  INFO 3776 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:32:40.915  INFO 3776 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:32:40.915  INFO 3776 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:35:14.020  INFO 8844 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 8844 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:35:14.022  INFO 8844 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:35:15.808  INFO 8844 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d992d3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:35:17.198  INFO 8844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:35:17.288  INFO 8844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:35:17.289  INFO 8844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:35:17.476  INFO 8844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:35:17.477  INFO 8844 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3405 ms
+2019-11-06 10:35:18.553  INFO 8844 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:35:18.768  INFO 8844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:35:19.110  INFO 8844 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:35:19.144  INFO 8844 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:35:19.185  INFO 8844 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:35:19.710  INFO 8844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:35:19.715  INFO 8844 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.221 seconds (JVM running for 6.87)
+2019-11-06 10:35:21.461  INFO 8844 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:35:21.471  INFO 8844 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:35:21.471  INFO 8844 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:35:21.486  INFO 8844 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 10:35:21.541  INFO 8844 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:35:21.542  INFO 8844 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:35:21.543  INFO 8844 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:35:21.584  INFO 8844 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:35:22.072  INFO 8844 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:35:22.270  INFO 8844 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:35:22.270  INFO 8844 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:35:22.270  INFO 8844 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:35:42.770  INFO 9456 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 9456 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:35:42.775  INFO 9456 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:35:45.072  INFO 9456 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5806439f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:35:46.744  INFO 9456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:35:46.868  INFO 9456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:35:46.869  INFO 9456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:35:47.144  INFO 9456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:35:47.144  INFO 9456 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4291 ms
+2019-11-06 10:35:48.452  INFO 9456 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:35:48.700  INFO 9456 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:35:49.130  INFO 9456 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:35:49.176  INFO 9456 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:35:49.243  INFO 9456 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:35:49.887  INFO 9456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:35:49.892  INFO 9456 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 7.709 seconds (JVM running for 8.349)
+2019-11-06 10:35:50.760  INFO 9456 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:35:50.771  INFO 9456 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:35:50.772  INFO 9456 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:35:50.786  INFO 9456 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 10:35:50.842  INFO 9456 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:35:50.842  INFO 9456 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:35:50.844  INFO 9456 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:35:50.876  INFO 9456 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:35:51.316  INFO 9456 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:35:51.551  INFO 9456 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:35:51.551  INFO 9456 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:35:51.552  INFO 9456 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:38:02.853  INFO 23884 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 23884 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:38:02.856  INFO 23884 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:38:04.745  INFO 23884 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c0067cfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:38:06.112  INFO 23884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:38:06.199  INFO 23884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:38:06.200  INFO 23884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:38:06.384  INFO 23884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:38:06.384  INFO 23884 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3475 ms
+2019-11-06 10:38:07.555  INFO 23884 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:38:07.758  INFO 23884 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:38:08.086  INFO 23884 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:38:08.126  INFO 23884 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:38:08.179  INFO 23884 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:38:08.620  INFO 23884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:38:08.624  INFO 23884 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.292 seconds (JVM running for 6.913)
+2019-11-06 10:38:12.311  INFO 23884 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:38:12.320  INFO 23884 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:38:12.320  INFO 23884 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:38:12.332  INFO 23884 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-06 10:38:12.375  INFO 23884 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:38:12.376  INFO 23884 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:38:12.377  INFO 23884 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:38:12.420  INFO 23884 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:38:12.845  INFO 23884 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:38:13.011  INFO 23884 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:38:13.011  INFO 23884 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:38:13.011  INFO 23884 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:44:50.321  INFO 23352 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 23352 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:44:50.330  INFO 23352 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:44:52.445  INFO 23352 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7dfca8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:44:53.900  INFO 23352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:44:54.043  INFO 23352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:44:54.044  INFO 23352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:44:54.251  INFO 23352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:44:54.252  INFO 23352 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3855 ms
+2019-11-06 10:44:55.357  INFO 23352 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:44:55.553  INFO 23352 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:44:55.865  INFO 23352 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:44:55.911  INFO 23352 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:44:55.956  INFO 23352 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:44:56.328  INFO 23352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:44:56.331  INFO 23352 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.583 seconds (JVM running for 7.262)
+2019-11-06 10:46:02.546  INFO 23352 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:46:02.556  INFO 23352 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:46:02.556  INFO 23352 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:46:02.568  INFO 23352 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 10:46:02.622  INFO 23352 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:46:02.622  INFO 23352 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:46:02.624  INFO 23352 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:46:02.658  INFO 23352 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:46:03.395  INFO 23352 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:46:03.594  INFO 23352 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:46:03.594  INFO 23352 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:46:03.595  INFO 23352 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:47:57.513  INFO 20488 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 20488 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:47:57.517  INFO 20488 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:47:59.397  INFO 20488 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e81ef243] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:48:00.818  INFO 20488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:48:00.843  INFO 20488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:48:00.843  INFO 20488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:48:01.071  INFO 20488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:48:01.071  INFO 20488 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3493 ms
+2019-11-06 10:48:02.078  INFO 20488 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:48:02.269  INFO 20488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:48:02.619  INFO 20488 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:48:02.675  INFO 20488 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:48:02.723  INFO 20488 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:48:03.088  INFO 20488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:48:03.091  INFO 20488 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.069 seconds (JVM running for 6.7)
+2019-11-06 10:48:06.782  INFO 20488 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:48:06.794  INFO 20488 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:48:06.795  INFO 20488 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:48:06.810  INFO 20488 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-11-06 10:48:06.863  INFO 20488 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:48:06.863  INFO 20488 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:48:06.865  INFO 20488 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:48:06.906  INFO 20488 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:48:07.373  INFO 20488 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:48:07.609  INFO 20488 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:48:07.609  INFO 20488 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:48:07.609  INFO 20488 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:51:42.415  INFO 18612 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 18612 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:51:42.418  INFO 18612 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:51:44.347  INFO 18612 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$21633a79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:51:45.810  INFO 18612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:51:45.926  INFO 18612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:51:45.926  INFO 18612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:51:46.103  INFO 18612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:51:46.103  INFO 18612 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3627 ms
+2019-11-06 10:51:47.179  INFO 18612 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:51:47.388  INFO 18612 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:51:47.679  INFO 18612 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:51:47.712  INFO 18612 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:51:47.755  INFO 18612 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:51:48.151  INFO 18612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:51:48.156  INFO 18612 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.327 seconds (JVM running for 7.027)
+2019-11-06 10:51:52.764  INFO 18612 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:51:52.774  INFO 18612 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:51:52.774  INFO 18612 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:51:52.788  INFO 18612 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 10:51:52.836  INFO 18612 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:51:52.836  INFO 18612 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:51:52.838  INFO 18612 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:51:52.873  INFO 18612 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:51:53.394  INFO 18612 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:51:53.610  INFO 18612 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:51:53.611  INFO 18612 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:51:53.611  INFO 18612 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:55:54.270  INFO 18612 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:55:54.271  INFO 18612 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:55:54.271  INFO 18612 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:55:54.358  INFO 18612 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:55:54.358  INFO 18612 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:55:54.358  INFO 18612 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 10:59:20.872  INFO 21428 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 21428 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 10:59:20.877  INFO 21428 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 10:59:22.841  INFO 21428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64c40b86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 10:59:24.268  INFO 21428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 10:59:24.362  INFO 21428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 10:59:24.362  INFO 21428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 10:59:24.567  INFO 21428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 10:59:24.567  INFO 21428 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3623 ms
+2019-11-06 10:59:25.804  INFO 21428 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 10:59:26.063  INFO 21428 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 10:59:26.422  INFO 21428 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 10:59:26.461  INFO 21428 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 10:59:26.501  INFO 21428 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 10:59:26.863  INFO 21428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 10:59:26.868  INFO 21428 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.511 seconds (JVM running for 7.207)
+2019-11-06 10:59:27.040  INFO 21428 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 10:59:27.054  INFO 21428 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 10:59:27.054  INFO 21428 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 10:59:27.071  INFO 21428 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-11-06 10:59:27.130  INFO 21428 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:59:27.131  INFO 21428 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:59:27.133  INFO 21428 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 10:59:27.202  INFO 21428 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 10:59:27.680  INFO 21428 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 10:59:27.855  INFO 21428 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 10:59:27.856  INFO 21428 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 10:59:27.856  INFO 21428 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:00:37.725  INFO 6608 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 6608 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:00:37.728  INFO 6608 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:00:39.692  INFO 6608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c6ed1ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:00:41.192  INFO 6608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:00:41.280  INFO 6608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:00:41.280  INFO 6608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:00:41.462  INFO 6608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:00:41.462  INFO 6608 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3682 ms
+2019-11-06 11:00:42.484  INFO 6608 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:00:42.670  INFO 6608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:00:43.103  INFO 6608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:00:43.137  INFO 6608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:00:43.177  INFO 6608 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:00:43.569  INFO 6608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:00:43.573  INFO 6608 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.366 seconds (JVM running for 7.074)
+2019-11-06 11:00:45.008  INFO 6608 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:00:45.019  INFO 6608 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:00:45.019  INFO 6608 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:00:45.031  INFO 6608 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 11:00:45.070  INFO 6608 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:00:45.070  INFO 6608 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:00:45.071  INFO 6608 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:00:45.108  INFO 6608 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:00:45.576  INFO 6608 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:00:45.753  INFO 6608 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:00:45.754  INFO 6608 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:00:45.754  INFO 6608 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:01:31.658  INFO 24016 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 24016 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:01:31.662  INFO 24016 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:01:33.747  INFO 24016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$893dc7bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:01:35.405  INFO 24016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:01:35.508  INFO 24016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:01:35.508  INFO 24016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:01:35.851  INFO 24016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:01:35.852  INFO 24016 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4139 ms
+2019-11-06 11:01:37.352  INFO 24016 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:01:37.657  INFO 24016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:01:37.985  INFO 24016 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:01:38.020  INFO 24016 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:01:38.056  INFO 24016 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:01:38.430  INFO 24016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:01:38.433  INFO 24016 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 7.276 seconds (JVM running for 8.004)
+2019-11-06 11:01:38.511  INFO 24016 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:01:38.519  INFO 24016 --- [http-nio-8093-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:01:38.519  INFO 24016 --- [http-nio-8093-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:01:38.532  INFO 24016 --- [http-nio-8093-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-06 11:01:38.584  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 11:01:38.584  INFO 24016 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/
+2019-11-06 11:01:38.584  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 11:01:38.584  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 11:01:38.584  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:38.584  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:38.584  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:38.584  INFO 24016 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:38.586  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 11:01:38.586  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 11:01:38.586  INFO 24016 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
+2019-11-06 11:01:38.586  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 11:01:38.590  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 11:01:38.591  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:38.591  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 11:01:38.641  INFO 24016 --- [http-nio-8093-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:01:39.106  INFO 24016 --- [http-nio-8093-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:01:41.081  INFO 24016 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 11:01:41.081  INFO 24016 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 11:01:41.082  INFO 24016 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:41.082  INFO 24016 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:41.082  INFO 24016 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 11:01:41.082  INFO 24016 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 11:01:41.092  INFO 24016 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getArticle
+2019-11-06 11:01:41.092  INFO 24016 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:41.092  INFO 24016 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByArticleId
+2019-11-06 11:01:41.926  INFO 24016 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/getAllCategory
+2019-11-06 11:01:41.927  INFO 24016 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:41.927  INFO 24016 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getAllCategory
+2019-11-06 11:01:41.927  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 11:01:41.930  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:41.930  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 11:01:41.933  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 11:01:41.934  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:41.934  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 11:01:42.239  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 11:01:42.239  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/
+2019-11-06 11:01:42.240  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:42.240  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:42.240  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 11:01:42.240  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticleByTagId
+2019-11-06 11:01:42.919  INFO 24016 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/
+2019-11-06 11:01:42.919  INFO 24016 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:42.920  INFO 24016 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByCategoryIdAndPageNo
+2019-11-06 11:01:43.230  INFO 24016 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 11:01:43.232  INFO 24016 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:43.232  INFO 24016 --- [http-nio-8093-exec-6] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 11:01:43.702  INFO 24016 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 11:01:43.702  INFO 24016 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:43.702  INFO 24016 --- [http-nio-8093-exec-7] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 11:01:43.702  INFO 24016 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/category/
+2019-11-06 11:01:43.703  INFO 24016 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:43.703  INFO 24016 --- [http-nio-8093-exec-8] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByCategoryIdAndPageNo
+2019-11-06 11:01:45.075  INFO 24016 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/
+2019-11-06 11:01:45.076  INFO 24016 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:45.076  INFO 24016 --- [http-nio-8093-exec-9] com.analysys.blog.aspect.LogAspect       : 拦截方法：getNewestArticle
+2019-11-06 11:01:45.076  INFO 24016 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getTotalNumOfArticle
+2019-11-06 11:01:45.076  INFO 24016 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:45.077  INFO 24016 --- [http-nio-8093-exec-10] com.analysys.blog.aspect.LogAspect       : 拦截方法：getTotalNumOfArticleByCategoryIdOrTagId
+2019-11-06 11:01:46.492  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/tag/getPopularTag
+2019-11-06 11:01:46.492  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getPopularArticle
+2019-11-06 11:01:46.493  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:46.493  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:46.493  INFO 24016 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularTag
+2019-11-06 11:01:46.493  INFO 24016 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getPopularArticle
+2019-11-06 11:01:46.497  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getArticle
+2019-11-06 11:01:46.497  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : IP: 127.0.0.1
+2019-11-06 11:01:46.497  INFO 24016 --- [http-nio-8093-exec-3] com.analysys.blog.aspect.LogAspect       : 拦截方法：getArticleByArticleId
+2019-11-06 11:01:55.648  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:01:55.648  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:01:55.648  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:01:55.796  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:01:55.797  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:01:55.797  INFO 24016 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:06:46.352  INFO 11220 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 11220 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:06:46.355  INFO 11220 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:06:48.287  INFO 11220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$19776d64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:06:49.708  INFO 11220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:06:49.792  INFO 11220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:06:49.793  INFO 11220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:06:49.985  INFO 11220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:06:49.985  INFO 11220 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3568 ms
+2019-11-06 11:06:51.021  INFO 11220 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:06:51.292  INFO 11220 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:06:51.681  INFO 11220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:06:51.731  INFO 11220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:06:51.786  INFO 11220 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:06:52.215  INFO 11220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:06:52.219  INFO 11220 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.365 seconds (JVM running for 7.006)
+2019-11-06 11:06:52.947  INFO 11220 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:06:52.960  INFO 11220 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:06:52.960  INFO 11220 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:06:52.972  INFO 11220 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 11:06:53.020  INFO 11220 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:06:53.021  INFO 11220 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:06:53.023  INFO 11220 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:06:53.060  INFO 11220 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:06:53.508  INFO 11220 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:06:53.682  INFO 11220 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:06:53.683  INFO 11220 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:06:53.683  INFO 11220 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:07:33.046  INFO 15316 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 15316 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:07:33.050  INFO 15316 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:07:35.261  INFO 15316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8c84e1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:07:36.651  INFO 15316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:07:36.739  INFO 15316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:07:36.739  INFO 15316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:07:36.920  INFO 15316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:07:36.920  INFO 15316 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3812 ms
+2019-11-06 11:07:37.945  INFO 15316 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:07:38.142  INFO 15316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:07:38.467  INFO 15316 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:07:38.504  INFO 15316 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:07:38.546  INFO 15316 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:07:38.973  INFO 15316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:07:38.977  INFO 15316 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.431 seconds (JVM running for 7.089)
+2019-11-06 11:07:40.628  INFO 15316 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:07:40.638  INFO 15316 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:07:40.639  INFO 15316 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:07:40.653  INFO 15316 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-06 11:07:40.698  INFO 15316 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:07:40.699  INFO 15316 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:07:40.700  INFO 15316 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:07:40.751  INFO 15316 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:07:41.270  INFO 15316 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:07:41.446  INFO 15316 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:07:41.446  INFO 15316 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:07:41.446  INFO 15316 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:09:00.281  INFO 1312 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 1312 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:09:00.287  INFO 1312 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:09:02.340  INFO 1312 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12ba72d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:09:03.727  INFO 1312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:09:03.816  INFO 1312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:09:03.817  INFO 1312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:09:04.008  INFO 1312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:09:04.009  INFO 1312 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3659 ms
+2019-11-06 11:09:05.116  INFO 1312 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:09:05.343  INFO 1312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:09:05.733  INFO 1312 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:09:05.781  INFO 1312 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:09:05.823  INFO 1312 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:09:06.273  INFO 1312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:09:06.277  INFO 1312 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.606 seconds (JVM running for 7.308)
+2019-11-06 11:09:06.559  INFO 1312 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:09:06.569  INFO 1312 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:09:06.569  INFO 1312 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:09:06.582  INFO 1312 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 11:09:06.627  INFO 1312 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:09:06.628  INFO 1312 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:09:06.629  INFO 1312 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:09:06.660  INFO 1312 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:09:07.099  INFO 1312 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:09:07.284  INFO 1312 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:09:07.284  INFO 1312 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:09:07.284  INFO 1312 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:10:01.451  INFO 1312 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:10:01.451  INFO 1312 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:10:01.451  INFO 1312 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:10:01.528  INFO 1312 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:10:01.529  INFO 1312 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:10:01.529  INFO 1312 --- [http-nio-8093-exec-4] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:10:15.840  INFO 1312 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:10:15.840  INFO 1312 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:10:15.840  INFO 1312 --- [http-nio-8093-exec-5] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:12:03.586  INFO 16568 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 16568 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:12:03.589  INFO 16568 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:12:05.829  INFO 16568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3a5db881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:12:07.440  INFO 16568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:12:07.546  INFO 16568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:12:07.546  INFO 16568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:12:07.755  INFO 16568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:12:07.755  INFO 16568 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4107 ms
+2019-11-06 11:12:08.951  INFO 16568 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:12:09.201  INFO 16568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:12:09.527  INFO 16568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:12:09.562  INFO 16568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:12:09.606  INFO 16568 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:12:09.992  INFO 16568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:12:09.997  INFO 16568 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.968 seconds (JVM running for 7.794)
+2019-11-06 11:12:48.695  INFO 16568 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:12:48.707  INFO 16568 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:12:48.708  INFO 16568 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:12:48.720  INFO 16568 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 11:12:48.772  INFO 16568 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:12:48.773  INFO 16568 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:12:48.775  INFO 16568 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:12:48.816  INFO 16568 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:12:49.328  INFO 16568 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:13:35.980  INFO 15964 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 15964 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:13:35.983  INFO 15964 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:13:38.082  INFO 15964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb42ab47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:13:39.577  INFO 15964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:13:39.679  INFO 15964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:13:39.679  INFO 15964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:13:39.887  INFO 15964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:13:39.888  INFO 15964 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3852 ms
+2019-11-06 11:13:41.565  INFO 15964 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:13:41.845  INFO 15964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:13:42.230  INFO 15964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:13:42.269  INFO 15964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:13:42.317  INFO 15964 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:13:42.779  INFO 15964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:13:42.783  INFO 15964 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 7.346 seconds (JVM running for 8.032)
+2019-11-06 11:13:53.759  INFO 15964 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:13:53.769  INFO 15964 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:13:53.770  INFO 15964 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:13:53.781  INFO 15964 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-06 11:13:53.825  INFO 15964 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:13:53.826  INFO 15964 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:13:53.827  INFO 15964 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:13:53.857  INFO 15964 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:13:54.380  INFO 15964 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:15:27.677  INFO 24100 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 24100 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:15:27.686  INFO 24100 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:15:29.796  INFO 24100 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46514daf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:15:31.271  INFO 24100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:15:31.395  INFO 24100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:15:31.395  INFO 24100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:15:31.585  INFO 24100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:15:31.586  INFO 24100 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3841 ms
+2019-11-06 11:15:32.747  INFO 24100 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:15:32.948  INFO 24100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:15:33.331  INFO 24100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:15:33.371  INFO 24100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:15:33.419  INFO 24100 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:15:33.825  INFO 24100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:15:33.831  INFO 24100 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.641 seconds (JVM running for 7.278)
+2019-11-06 11:15:57.040 DEBUG 18368 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-11-06 11:15:57.221  INFO 18368 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 18368 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:15:57.222  INFO 18368 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:16:00.245  INFO 18368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$726d2fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:16:02.059  INFO 18368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:16:02.189  INFO 18368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:16:02.189  INFO 18368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:16:02.423  INFO 18368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:16:02.423  INFO 18368 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5126 ms
+2019-11-06 11:16:03.778  INFO 18368 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:16:04.035  INFO 18368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:16:04.514  INFO 18368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:16:04.564  INFO 18368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:16:04.618  INFO 18368 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:16:05.152  INFO 18368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:16:05.161  INFO 18368 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 8.658 seconds (JVM running for 9.482)
+2019-11-06 11:16:05.554  INFO 18368 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:16:05.569  INFO 18368 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:16:05.570  INFO 18368 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:16:05.591  INFO 18368 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-11-06 11:16:05.655  INFO 18368 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:16:05.656  INFO 18368 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:16:05.658  INFO 18368 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:16:05.701  INFO 18368 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:16:06.206  INFO 18368 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:16:06.401  INFO 18368 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:16:06.401  INFO 18368 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:16:06.401  INFO 18368 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:16:06.457  INFO 18368 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:16:06.458  INFO 18368 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:16:06.458  INFO 18368 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:16:06.514  INFO 18368 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:16:06.515  INFO 18368 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:16:06.515  INFO 18368 --- [http-nio-8093-exec-2] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:19:03.313  INFO 4408 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 4408 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:19:03.322  INFO 4408 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:19:05.673  INFO 4408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$796a2d5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:19:07.165  INFO 4408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:19:07.268  INFO 4408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:19:07.268  INFO 4408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:19:07.485  INFO 4408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:19:07.485  INFO 4408 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4106 ms
+2019-11-06 11:19:08.563  INFO 4408 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:19:08.778  INFO 4408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:19:09.167  INFO 4408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:19:09.206  INFO 4408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:19:09.248  INFO 4408 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:19:09.646  INFO 4408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:19:09.651  INFO 4408 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.877 seconds (JVM running for 7.557)
+2019-11-06 11:19:09.713  INFO 4408 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:19:09.728  INFO 4408 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:19:09.728  INFO 4408 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:19:09.750  INFO 4408 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2019-11-06 11:19:09.821  INFO 4408 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:19:09.822  INFO 4408 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:19:09.823  INFO 4408 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:19:09.864  INFO 4408 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:19:10.322  INFO 4408 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 11:19:10.561  INFO 4408 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:19:10.561  INFO 4408 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:19:10.561  INFO 4408 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：handle
+2019-11-06 11:19:22.200  INFO 15956 --- [main] com.analysys.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ZF with PID 15956 (D:\IdeaProjects\AnalysysBlog\target\classes started by zhaofeng in D:\IdeaProjects\AnalysysBlog)
+2019-11-06 11:19:22.205  INFO 15956 --- [main] com.analysys.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2019-11-06 11:19:24.231  INFO 15956 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be81004] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 11:19:25.664  INFO 15956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2019-11-06 11:19:25.750  INFO 15956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 11:19:25.750  INFO 15956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-11-06 11:19:25.935  INFO 15956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 11:19:25.935  INFO 15956 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3657 ms
+2019-11-06 11:19:26.969  INFO 15956 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-06 11:19:27.159  INFO 15956 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 11:19:27.557  INFO 15956 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 11:19:27.601  INFO 15956 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 11:19:27.651  INFO 15956 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 11:19:28.096  INFO 15956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2019-11-06 11:19:28.101  INFO 15956 --- [main] com.analysys.blog.BlogApplication        : Started BlogApplication in 6.453 seconds (JVM running for 7.108)
+2019-11-06 11:19:29.425  INFO 15956 --- [http-nio-8093-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1565311382; Hm_lvt_8b02a318fde5831da10426656a43d03c=1566799307; csrftoken=s4Bw6VWZ7YIU0RD0JOIcFeq0XiKwV9Fqy3kcpGYYmjH5cXBk2ZiWDvDORcI45h4h; sessionid=p8z0f3t5f3u6fre3tehqouv9fsvi83sc] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-06 11:19:29.436  INFO 15956 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 11:19:29.436  INFO 15956 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 11:19:29.448  INFO 15956 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-06 11:19:29.502  INFO 15956 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : URL: http://localhost:8093/api/blog/getRelatedRecommendationArticles
+2019-11-06 11:19:29.502  INFO 15956 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : IP: 0:0:0:0:0:0:0:1
+2019-11-06 11:19:29.505  INFO 15956 --- [http-nio-8093-exec-1] com.analysys.blog.aspect.LogAspect       : 拦截方法：getRelatedRecommendationArticles
+2019-11-06 11:19:29.543  INFO 15956 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 11:19:30.003  INFO 15956 --- [http-nio-8093-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

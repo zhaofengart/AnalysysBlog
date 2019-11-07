@@ -2,10 +2,14 @@ package com.analysys.blog.controller;
 
 import com.analysys.blog.common.JsonResult;
 import com.analysys.blog.entity.Article;
+import com.analysys.blog.entity.Tag;
 import com.analysys.blog.pojo.ArticleParam;
 import com.analysys.blog.pojo.WangEditor;
 import com.analysys.blog.service.ArticleService;
+import com.analysys.blog.service.CategoryService;
+import com.analysys.blog.service.TagService;
 import com.analysys.blog.util.FileHandleUtil;
+import org.omg.PortableInterceptor.INACTIVE;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -43,9 +47,21 @@ public class ArticleController extends BaseController {
 
 
     // 不带标签的最新文章翻页
-    @RequestMapping("/page/{pageNo}")
-    public JsonResult getNewestArticleByPageNo(@PathVariable("pageNo") Integer pageNo){
+    @RequestMapping("/page")
+    public JsonResult getNewestArticleByPageNo(Integer pageNo){
         return articleService.getNewestArticleByPageNo(pageNo);
+    }
+
+    // 新的翻页接口
+    @RequestMapping("/page/new")
+    public JsonResult getArticleByPageNo(Integer categoryId, Integer tagId, Integer pageNo) {
+        if (categoryId != null) {
+            return articleService.getArticleByCategoryIdAndPageNo(categoryId, pageNo);
+        } else if (tagId != null) {
+            return articleService.getNewestArticleByTagIdAndPageNo(tagId, pageNo);
+        } else {
+            return articleService.getNewestArticleByPageNo(pageNo);
+        }
     }
 
 

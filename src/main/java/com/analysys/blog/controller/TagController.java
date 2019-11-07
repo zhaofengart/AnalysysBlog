@@ -28,9 +28,8 @@ public class TagController extends BaseController {
     }
 
     // 带标签最新文章翻页
-    @RequestMapping("/{tagId}/page/{pageNo}")
-    public JsonResult getNewestArticleByTagIdAndPageNo(@PathVariable("tagId") Integer tagId,
-                                                       @PathVariable("pageNo") Integer pageNo){
+    @RequestMapping("/page")
+    public JsonResult getNewestArticleByTagIdAndPageNo(Integer tagId, Integer pageNo){
         return articleService.getNewestArticleByTagIdAndPageNo(tagId, pageNo);
     }
 

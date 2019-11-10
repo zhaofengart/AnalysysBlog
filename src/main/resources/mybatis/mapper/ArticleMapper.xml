@@ -276,7 +276,7 @@
       article_id,
       title
     FROM article
-    ORDER scan_num DESC , issue_time DESC
+    order by scan_num DESC , issue_time DESC
     limit #{limitNum}
   </select>
 
@@ -332,25 +332,18 @@
 
   <!-- 根据标签id、类别id和当前文章id获取取上一篇文章的id和title -->
   <select id="selectPreviousArticle" resultMap="SimpleArticlePojo">
-    SELECT
-      a.article_id,
-      title
-    FROM article a
-      LEFT JOIN article_tag atg ON a.article_id = atg.article_id
-    <where>
-      <if test="tagId != null">
-        AND tag_id = #{tagId}
-      </if>
-      <if test="categoryId != null">
-        AND a.category_id = #{categoryId}
-      </if>
-    </where>
-    AND issue_time >=
-    ( SELECT issue_time
-      FROM article
-      WHERE article_id=#{articleId}
-      )
-    AND a.article_id > #{articleId}
+    select a.article_id, title
+    from article a, article_tag atg
+    where a.article_id = atg.article_id
+    <if test="tagId != null">
+      and tag_id = #{tagId}
+    </if>
+    <if test="categoryId != null">
+      and a.category_id = #{categoryId}
+    </if>
+    and issue_time >=
+    (select issue_time from article where article_id=#{articleId})
+    and a.article_id > #{articleId}
     order by issue_time asc, a.article_id asc
     limit 1
   </select>
@@ -358,23 +351,17 @@
 
   <!-- 根据标签id、类别id和当前文章id获取取下一篇文章的id和title -->
   <select id="selectNextArticle" resultMap="SimpleArticlePojo">
-    select
-      a.article_id,
-      title
-    from article a left join article_tag atg on a.article_id = atg.article_id
-    <where>
-      <if test="tagId != null">
-        and tag_id = #{tagId}
-      </if>
-      <if test="categoryId != null">
-        and a.category_id = #{categoryId}
-      </if>
-    </where>
+    select a.article_id, title
+    from article a, article_tag atg
+    where a.article_id = atg.article_id
+    <if test="tagId != null">
+      and tag_id = #{tagId}
+    </if>
+    <if test="categoryId != null">
+      and a.category_id = #{categoryId}
+    </if>
     and issue_time  &lt;=
-    (select issue_time
-    from article
-    where article_id=#{articleId}
-    )
+    (select issue_time from article where article_id=#{articleId})
     and a.article_id &lt; #{articleId}
     order by issue_time desc, a.article_id desc
     limit 1
@@ -425,8 +412,7 @@
 
   <!-- 增加文章浏览量 -->
   <update id="addOneToScanNumByArticleId">
-    update
-      article
+    update article
     set scan_num = scan_num + 1
     where article_id = #{articleId}
   </update>

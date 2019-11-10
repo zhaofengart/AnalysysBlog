@@ -22,7 +22,7 @@ public class TagController extends BaseController {
     private TagService tagService;
 
     // 根据标签id显示最新文章
-    @PostMapping("/")
+    @RequestMapping("/")
     public JsonResult getNewestArticleByTagId(Integer tagId){
         return articleService.getNewestArticleByTagId(tagId);
     }

@@ -4,6 +4,7 @@ import com.analysys.blog.common.JsonResult;
 import com.analysys.blog.entity.User;
 import com.analysys.blog.service.UserService;
 import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/5/23
  */
 
+@Slf4j
 @CrossOrigin
 @RestController
 @RequestMapping("/api/blog/user")
@@ -25,7 +27,7 @@ public class UserController extends BaseController {
 
     @PostMapping("/login")
     public JsonResult login(@ApiParam("用户名") String username, @ApiParam("密码") String password){
-        System.out.println(username+password);
+        log.info(username+password);
         return userService.login(username, password);
     }
 

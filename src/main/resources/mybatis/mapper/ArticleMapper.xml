@@ -239,56 +239,82 @@
 
   <!-- 根据文章id获取完整文章 -->
   <select id="selectByArticleId" resultMap="ArticlePojo">
-    select
-    a.article_id, a.category_id, title, realname, issue_time, img_path, content
-    from article a, user u
-    where a.user_id = u.user_id
-    and a.article_id = #{articleId}
+    SELECT
+      a.article_id,
+      a.category_id,
+      title,
+      realname,
+      issue_time,
+      img_path,
+      content
+    FROM article a
+      LEFT JOIN user u ON a.user_id = u.user_id
+    WHERE a.article_id = #{articleId}
   </select>
 
 
   <!-- 获取最新文章 -->
   <select id="selectNewestArticleWithLimitNum" resultMap="ArticlePojo">
-    select
-    a.article_id, a.category_id, title, realname, issue_time, img_path, summary
-    from article a, user u
-    where a.user_id = u.user_id
-    order by issue_time desc
+    SELECT
+      a.article_id,
+      a.category_id,
+      title,
+      realname,
+      issue_time,
+      img_path,
+      summary
+    FROM article a
+      LEFT JOIN user u ON a.user_id = u.user_id
+    ORDER BY issue_time desc
     limit #{limitNum}
   </select>
 
 
   <!-- 获取热门文章，只含articleId和title -->
   <select id="selectPopularArticleWithLimitNum" resultMap="SimpleArticlePojo">
-    select
-    article_id, title
-    from article
-    order by scan_num desc, issue_time desc
+    SELECT
+      article_id,
+      title
+    FROM article
+    ORDER scan_num DESC , issue_time DESC
     limit #{limitNum}
   </select>
 
 
   <!-- 根据类别id获取文章 -->
   <select id="selectArtilceByCategoryIdWithStartIndexAndLimitNum" resultMap="ArticlePojo">
-    select
-    a.article_id, a.category_id, title, realname, issue_time, img_path, summary
-    from article a, user u
-    where a.user_id = u.user_id
-    and a.category_id = #{categoryId}
-    order by issue_time desc
+    SELECT
+      a.article_id,
+      a.category_id,
+      title,
+      realname,
+      issue_time,
+      img_path,
+      summary
+    FROM article a
+      LEFT JOIN user u ON a.user_id = u.user_id
+    WHERE a.category_id = #{categoryId}
+    ORDER BY issue_time DESC
     limit #{startIndex}, #{limitNum}
   </select>
 
 
   <!-- 根据标签id获取最新文章 -->
   <select id="selectArtilceByTagIdWithStartIndexAndLimitNum" resultMap="ArticlePojo">
-    select
-    a.article_id, a.category_id, title, realname, issue_time, img_path, summary
-    from article a, user u
-    where a.user_id = u.user_id
-    and a.article_id in
-    (select distinct article_id from article_tag where tag_id=#{tagId})
-    order by issue_time desc
+    SELECT
+      a.article_id,
+      a.category_id,
+      title, realname,
+      issue_time,
+      img_path,
+      summary
+    FROM article a LEFT JOIN user u
+    ON a.user_id = u.user_id
+    WHERE a.article_id IN
+      (SELECT DISTINCT article_id
+        FROM article_tag
+        WHERE tag_id=#{tagId})
+    ORDER BY issue_time DESC
     limit #{startIndex}, #{limitNum}
   </select>
 
@@ -306,18 +332,25 @@
 
   <!-- 根据标签id、类别id和当前文章id获取取上一篇文章的id和title -->
   <select id="selectPreviousArticle" resultMap="SimpleArticlePojo">
-    select a.article_id, title
-    from article a, article_tag atg
-    where a.article_id = atg.article_id
-    <if test="tagId != null">
-      and tag_id = #{tagId}
-    </if>
-    <if test="categoryId != null">
-      and a.category_id = #{categoryId}
-    </if>
-    and issue_time >=
-    (select issue_time from article where article_id=#{articleId})
-    and a.article_id > #{articleId}
+    SELECT
+      a.article_id,
+      title
+    FROM article a
+      LEFT JOIN article_tag atg ON a.article_id = atg.article_id
+    <where>
+      <if test="tagId != null">
+        AND tag_id = #{tagId}
+      </if>
+      <if test="categoryId != null">
+        AND a.category_id = #{categoryId}
+      </if>
+    </where>
+    AND issue_time >=
+    ( SELECT issue_time
+      FROM article
+      WHERE article_id=#{articleId}
+      )
+    AND a.article_id > #{articleId}
     order by issue_time asc, a.article_id asc
     limit 1
   </select>
@@ -325,17 +358,23 @@
 
   <!-- 根据标签id、类别id和当前文章id获取取下一篇文章的id和title -->
   <select id="selectNextArticle" resultMap="SimpleArticlePojo">
-    select a.article_id, title
-    from article a, article_tag atg
-    where a.article_id = atg.article_id
-    <if test="tagId != null">
-      and tag_id = #{tagId}
-    </if>
-    <if test="categoryId != null">
-      and a.category_id = #{categoryId}
-    </if>
+    select
+      a.article_id,
+      title
+    from article a left join article_tag atg on a.article_id = atg.article_id
+    <where>
+      <if test="tagId != null">
+        and tag_id = #{tagId}
+      </if>
+      <if test="categoryId != null">
+        and a.category_id = #{categoryId}
+      </if>
+    </where>
     and issue_time  &lt;=
-    (select issue_time from article where article_id=#{articleId})
+    (select issue_time
+    from article
+    where article_id=#{articleId}
+    )
     and a.article_id &lt; #{articleId}
     order by issue_time desc, a.article_id desc
     limit 1
@@ -386,7 +425,8 @@
 
   <!-- 增加文章浏览量 -->
   <update id="addOneToScanNumByArticleId">
-    update article
+    update
+      article
     set scan_num = scan_num + 1
     where article_id = #{articleId}
   </update>

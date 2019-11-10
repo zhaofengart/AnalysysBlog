@@ -1,7 +1,6 @@
 package com.analysys.blog.controller;
 
 import com.analysys.blog.common.JsonResult;
-import com.analysys.blog.repository.CategoryMapper;
 import com.analysys.blog.service.ArticleService;
 import com.analysys.blog.service.CategoryService;
 import lombok.extern.slf4j.Slf4j;

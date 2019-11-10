@@ -110,13 +110,15 @@
   </update>
 
 
-  <!-- 根据文章id货物对应的标签  -->
+  <!-- 根据文章id获取对应的标签  -->
   <select id="selectTagByArticleId" resultMap="BaseResultMap">
     select
-    t.tag_id, t.tag_name, t.call_num
-    from article_tag atg, tag t
-    where atg.tag_id = t.tag_id
-    and article_id = #{articleId}
+      t.tag_id,
+      t.tag_name,
+      t.call_num
+    from article_tag atg
+      left join tag t on atg.tag_id = t.tag_id
+    where article_id = #{articleId}
   </select>
 
 

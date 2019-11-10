@@ -2,14 +2,11 @@ package com.analysys.blog.controller;
 
 import com.analysys.blog.common.JsonResult;
 import com.analysys.blog.entity.Article;
-import com.analysys.blog.entity.Tag;
 import com.analysys.blog.pojo.ArticleParam;
 import com.analysys.blog.pojo.WangEditor;
 import com.analysys.blog.service.ArticleService;
-import com.analysys.blog.service.CategoryService;
-import com.analysys.blog.service.TagService;
 import com.analysys.blog.util.FileHandleUtil;
-import org.omg.PortableInterceptor.INACTIVE;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,6 +19,7 @@ import java.io.IOException;
  * @date 2019/5/24
  */
 
+@Slf4j
 @CrossOrigin
 @RestController
 @RequestMapping("/api/blog")
@@ -100,8 +98,7 @@ public class ArticleController extends BaseController {
 
     @RequestMapping("/getTotalNumOfArticle")
     public JsonResult getTotalNumOfArticleByCategoryIdOrTagId(Integer categoryId, Integer tagId) {
-        System.out.println(categoryId);
-        System.out.println(tagId);
+        log.info("categoryId: " + categoryId + " tagId: " + tagId);
         return articleService.getTotalNumOfArticleByCategoryIdOrTagId(categoryId, tagId);
     }
 }

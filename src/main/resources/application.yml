@@ -8,9 +8,9 @@ mybatis:
 
 spring:
   datasource:
-    username: analysys_club
+    username: yiguan_club
     password: YiGuanXYZ.@()85258638
-    url: jdbc:mysql://118.25.133.235:3306/yiguan?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://cdb-be3bjsg8.bj.tencentcdb.com:10209/yiguan?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
 #    username: root
 #    password: 123456
 #    url: jdbc:mysql://localhost:3306/yiguan?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
